@@ -1,0 +1,40 @@
+# .github/workflows/ci.yml
+
+name: Deploy MkDocs Site to GitHub Pages
+
+# Run this workflow on pushes to the main branch
+on:
+  push:
+    branches:
+      - main
+      - master
+
+# Allow this job to clone the repo and create a page deployment
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Check out the repository's code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Set up Python
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      # Step 3: Install all your dependencies
+      # This step is customized for your mkdocs.yml file
+      - name: Install dependencies
+        run: |
+          pip install mkdocs
+          pip install mkdocs-material
+          pip install pymdown-extensions
+
+      # Step 4: Build and deploy the site using the gh-deploy command
+      - name: Deploy site
+        run: mkdocs gh-deploy --force --clean
