@@ -1,0 +1,387 @@
+site_name: My Study Guide
+theme:
+  name: material
+  features:
+    - navigation.instant # Optional, but recommended for better experience
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - footnotes
+  - pymdownx.details
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      # The correct key is 'custom_fences'
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+plugins:
+  - search
+
+# REMOVE THIS ENTIRE SECTION
+# extra_javascript:
+#   - https://unpkg.com/mermaid@10.6.1/dist/mermaid.min.js
+#   - js/init_mermaid.js
+
+nav:
+  - AWS Essentials:
+      - 1 Core Services & Foundational Concepts:
+          - 1.1 IAM Users, Groups, Roles, And Policies: AWS_Essentials/1_Core_Services_&_Foundational_Concepts/1.1_IAM_Users,_Groups,_Roles,_and_Policies.md
+          - 1.2 EC2 Instances, Security Groups, And EBS: AWS_Essentials/1_Core_Services_&_Foundational_Concepts/1.2_EC2_Instances,_Security_Groups,_and_EBS.md
+          - 1.3 S3 Buckets, Objects, And Storage Classes: AWS_Essentials/1_Core_Services_&_Foundational_Concepts/1.3_S3_Buckets,_Objects,_and_Storage_Classes.md
+          - 1.4 VPC Subnets (Public Vs. Private), Route Tables, NAT Vs. Internet Gateway: AWS_Essentials/1_Core_Services_&_Foundational_Concepts/1.4_VPC_Subnets_(Public_vs._Private),_Route_Tables,_NAT_vs._Internet_Gateway.md
+          - 1.5 Global Infrastructure Regions Vs. Availability Zones: AWS_Essentials/1_Core_Services_&_Foundational_Concepts/1.5_Global_Infrastructure_Regions_vs._Availability_Zones.md
+          - 1.6 Shared Responsibility Model: AWS_Essentials/1_Core_Services_&_Foundational_Concepts/1.6_Shared_Responsibility_Model.md
+      - 2 Scalability, Automation & Managed Databases:
+          - 2.1 Elastic Load Balancing (ALB Vs. NLB): AWS_Essentials/2_Scalability,_Automation_&_Managed_Databases/2.1_Elastic_Load_Balancing_(ALB_vs._NLB).md
+          - 2.2 Auto Scaling Groups (ASG): AWS_Essentials/2_Scalability,_Automation_&_Managed_Databases/2.2_Auto_Scaling_Groups_(ASG).md
+          - 2.3 RDS Managed Relational Databases & Read Replicas: AWS_Essentials/2_Scalability,_Automation_&_Managed_Databases/2.3_RDS_Managed_Relational_Databases_&_Read_Replicas.md
+          - 2.4 DynamoDB Core Concepts (Partitions, Keys, Consistency): AWS_Essentials/2_Scalability,_Automation_&_Managed_Databases/2.4_DynamoDB_Core_Concepts_(Partitions,_Keys,_Consistency).md
+          - 2.5 Lambda Serverless Compute And Event Driven Architecture: AWS_Essentials/2_Scalability,_Automation_&_Managed_Databases/2.5_Lambda_Serverless_compute_and_event-driven_architecture.md
+          - 2.6 Infrastructure As Code (IaC) With CloudFormation: AWS_Essentials/2_Scalability,_Automation_&_Managed_Databases/2.6_Infrastructure_as_Code_(IaC)_with_CloudFormation.md
+      - 3 Decoupling, Caching & Observability:
+          - 3.1 SQS Message Queues For Decoupling: AWS_Essentials/3_Decoupling,_Caching_&_Observability/3.1_SQS_Message_Queues_for_Decoupling.md
+          - 3.2 SNS PubSub Messaging: AWS_Essentials/3_Decoupling,_Caching_&_Observability/3.2_SNS_PubSub_Messaging.md
+          - 3.3 CloudWatch Metrics, Alarms, And Logs: AWS_Essentials/3_Decoupling,_Caching_&_Observability/3.3_CloudWatch_Metrics,_Alarms,_and_Logs.md
+          - 3.4 Route 53 DNS And Routing Policies: AWS_Essentials/3_Decoupling,_Caching_&_Observability/3.4_Route_53_DNS_and_Routing_Policies.md
+          - 3.5 CloudFront Content Delivery Network (CDN) And Caching: AWS_Essentials/3_Decoupling,_Caching_&_Observability/3.5_CloudFront_Content_Delivery_Network_(CDN)_and_Caching.md
+          - 3.6 ElastiCache In Memory Caching (Redis Vs. Memcached): AWS_Essentials/3_Decoupling,_Caching_&_Observability/3.6_ElastiCache_In-Memory_Caching_(Redis_vs._Memcached).md
+  - Git:
+      - 1 Core Concepts & Everyday Workflow:
+          - 1.1 The Three States (Modified, Staged, Committed): Git/1_Core_Concepts_&_Everyday_Workflow/1.1_The_Three_States_(Modified,_Staged,_Committed).md
+          - 1.2 Git Init, Git Clone: Git/1_Core_Concepts_&_Everyday_Workflow/1.2_git_init,_git_clone.md
+          - 1.3 Git Add, Git Commit, Git Status: Git/1_Core_Concepts_&_Everyday_Workflow/1.3_git_add,_git_commit,_git_status.md
+          - 1.4 Git Log: Git/1_Core_Concepts_&_Everyday_Workflow/1.4_git_log.md
+          - 1.5 Git Remote Addremove: Git/1_Core_Concepts_&_Everyday_Workflow/1.5_git_remote_addremove.md
+          - 1.6 Git Push, Git Pull: Git/1_Core_Concepts_&_Everyday_Workflow/1.6_git_push,_git_pull.md
+          - 1.7 Ignoring Files With .Gitignore: Git/1_Core_Concepts_&_Everyday_Workflow/1.7_Ignoring_files_with_.gitignore.md
+      - 2 Branching, Merging & History Manipulation:
+          - 2.1 Git Branch (Create, List, Delete): Git/2_Branching,_Merging_&_History_Manipulation/2.1_git_branch_(create,_list,_delete).md
+          - 2.2 Git Checkout Git Switch: Git/2_Branching,_Merging_&_History_Manipulation/2.2_git_checkout_git_switch.md
+          - 2.3 Git Merge And Resolving Merge Conflicts: Git/2_Branching,_Merging_&_History_Manipulation/2.3_git_merge_and_Resolving_Merge_Conflicts.md
+          - 2.4 Fetch Vs. Pull: Git/2_Branching,_Merging_&_History_Manipulation/2.4_Fetch_vs._Pull.md
+          - 2.5 Git Rebase (And When Not To Use It): Git/2_Branching,_Merging_&_History_Manipulation/2.5_git_rebase_(and_when_not_to_use_it).md
+          - 2.6 Git Reset (Soft, Mixed, Hard): Git/2_Branching,_Merging_&_History_Manipulation/2.6_git_reset_(soft,_mixed,_hard).md
+          - 2.7 Git Revert: Git/2_Branching,_Merging_&_History_Manipulation/2.7_git_revert.md
+          - 2.8 Git Stash: Git/2_Branching,_Merging_&_History_Manipulation/2.8_git_stash.md
+      - 3 Advanced Techniques & Internals:
+          - 3.1 Interactive Rebase (Squash, Fixup, Reword): Git/3_Advanced_Techniques_&_Internals/3.1_Interactive_Rebase_(squash,_fixup,_reword).md
+          - 3.2 Git Cherry Pick: Git/3_Advanced_Techniques_&_Internals/3.2_git_cherry-pick.md
+          - 3.3 Git Reflog Your Safety Net: Git/3_Advanced_Techniques_&_Internals/3.3_git_reflog_Your_Safety_Net.md
+          - 3.4 Git Objects (Blobs, Trees, Commits, Tags): Git/3_Advanced_Techniques_&_Internals/3.4_Git_Objects_(blobs,_trees,_commits,_tags).md
+          - 3.5 Git Bisect: Git/3_Advanced_Techniques_&_Internals/3.5_git_bisect.md
+          - 3.6 Git Hooks: Git/3_Advanced_Techniques_&_Internals/3.6_Git_Hooks.md
+          - 3.7 Git Blame: Git/3_Advanced_Techniques_&_Internals/3.7_git_blame.md
+  - JavaScript:
+      - 1 Core Concepts & Interview Fundamentals:
+          - 1.1 Execution Context & Hoisting: JavaScript/1_Core_Concepts_&_Interview_Fundamentals/1.1_Execution_Context_&_Hoisting.md
+          - 1.2 The 'This' Keyword: JavaScript/1_Core_Concepts_&_Interview_Fundamentals/1.2_The_'this'_Keyword.md
+          - 1.3 Closures & Scope: JavaScript/1_Core_Concepts_&_Interview_Fundamentals/1.3_Closures_&_Scope.md
+          - 1.4 Prototypal Inheritance: JavaScript/1_Core_Concepts_&_Interview_Fundamentals/1.4_Prototypal_Inheritance.md
+          - 1.5 Value Vs. Reference Types: JavaScript/1_Core_Concepts_&_Interview_Fundamentals/1.5_Value_vs._Reference_Types.md
+          - 1.6 Equality (== Vs ===, Type Coercion): JavaScript/1_Core_Concepts_&_Interview_Fundamentals/1.6_Equality_(==_vs_===,_Type_Coercion).md
+      - 2 Asynchronous JavaScript & Modern Features:
+          - 2.1 The Event Loop: JavaScript/2_Asynchronous_JavaScript_&_Modern_Features/2.1_The_Event_Loop.md
+          - 2.2 Callbacks, Promises, And The Microtask Queue: JavaScript/2_Asynchronous_JavaScript_&_Modern_Features/2.2_Callbacks,_Promises,_and_the_Microtask_Queue.md
+          - 2.3 AsyncAwait: JavaScript/2_Asynchronous_JavaScript_&_Modern_Features/2.3_AsyncAwait.md
+          - 2.4 ES6+ Data Structures (Map, Set, WeakMap): JavaScript/2_Asynchronous_JavaScript_&_Modern_Features/2.4_ES6+_Data_Structures_(Map,_Set,_WeakMap).md
+          - 2.5 Array Methods & Higher Order Functions (Map, Filter, Reduce): JavaScript/2_Asynchronous_JavaScript_&_Modern_Features/2.5_Array_Methods_&_Higher-Order_Functions_(map,_filter,_reduce).md
+          - 2.6 Destructuring & SpreadRest Operators: JavaScript/2_Asynchronous_JavaScript_&_Modern_Features/2.6_Destructuring_&_SpreadRest_Operators.md
+      - 3 Performance, Architecture, And The Browser:
+          - 3.1 Memory Management & Garbage Collection: JavaScript/3_Performance,_Architecture,_and_the_Browser/3.1_Memory_Management_&_Garbage_Collection.md
+          - 3.2 Event Bubbling, Capturing, And Delegation: JavaScript/3_Performance,_Architecture,_and_the_Browser/3.2_Event_Bubbling,_Capturing,_and_Delegation.md
+          - 3.3 Modules & Bundlers (ESM Vs CommonJS, WebpackVite Basics): JavaScript/3_Performance,_Architecture,_and_the_Browser/3.3_Modules_&_Bundlers_(ESM_vs_CommonJS,_WebpackVite_basics).md
+          - 3.4 Debouncing And Throttling: JavaScript/3_Performance,_Architecture,_and_the_Browser/3.4_Debouncing_and_Throttling.md
+          - 3.5 Generators And Iterators: JavaScript/3_Performance,_Architecture,_and_the_Browser/3.5_Generators_and_Iterators.md
+          - 3.6 Web Workers & Concurrency: JavaScript/3_Performance,_Architecture,_and_the_Browser/3.6_Web_Workers_&_Concurrency.md
+  - Networking:
+      - 1 Network Models & Data Link Layer:
+          - 1.1 OSI Vs. TCPIP Model: Networking/1_Network_Models_&_Data_Link_Layer/1.1_OSI_vs._TCPIP_Model.md
+          - 1.2 Data Encapsulation: Networking/1_Network_Models_&_Data_Link_Layer/1.2_Data_Encapsulation.md
+          - 1.3 IP Addresses Vs. MAC Addresses: Networking/1_Network_Models_&_Data_Link_Layer/1.3_IP_Addresses_vs._MAC_Addresses.md
+          - 1.4 ARP (Address Resolution Protocol): Networking/1_Network_Models_&_Data_Link_Layer/1.4_ARP_(Address_Resolution_Protocol).md
+          - 1.5 Switches Vs. Routers Vs. Hubs: Networking/1_Network_Models_&_Data_Link_Layer/1.5_Switches_vs._Routers_vs._Hubs.md
+          - 1.6 Subnetting And CIDR Notation: Networking/1_Network_Models_&_Data_Link_Layer/1.6_Subnetting_and_CIDR_Notation.md
+      - 2 Transport & Application Layers:
+          - 2.1 TCP Vs. UDP: Networking/2_Transport_&_Application_Layers/2.1_TCP_vs._UDP.md
+          - 2.2 TCP 3 Way Handshake & Connection Termination: Networking/2_Transport_&_Application_Layers/2.2_TCP_3-Way_Handshake_&_Connection_Termination.md
+          - 2.3 TCP Flow Control & Congestion Control: Networking/2_Transport_&_Application_Layers/2.3_TCP_Flow_Control_&_Congestion_Control.md
+          - 2.4 DNS Resolution Process (Recursive Vs. Iterative): Networking/2_Transport_&_Application_Layers/2.4_DNS_Resolution_Process_(Recursive_vs._Iterative).md
+          - 2.5 HTTPHTTPS (RequestResponse, Methods, Status Codes): Networking/2_Transport_&_Application_Layers/2.5_HTTPHTTPS_(RequestResponse,_Methods,_Status_Codes).md
+          - 2.6 What Happens When You Type Google.Com In Your Browser: Networking/2_Transport_&_Application_Layers/2.6_What_happens_when_you_type_google.com_in_your_browser.md
+      - 3 Security, Performance & Modern Networking:
+          - 3.1 TLSSSL Handshake: Networking/3_Security,_Performance_&_Modern_Networking/3.1_TLSSSL_Handshake.md
+          - 3.2 HTTP1.1 Vs HTTP2 Vs HTTP3 (QUIC): Networking/3_Security,_Performance_&_Modern_Networking/3.2_HTTP1.1_vs_HTTP2_vs_HTTP3_(QUIC).md
+          - 3.3 Load Balancers (L4 Vs. L7) & Reverse Proxies: Networking/3_Security,_Performance_&_Modern_Networking/3.3_Load_Balancers_(L4_vs._L7)_&_Reverse_Proxies.md
+          - 3.4 NAT (Network Address Translation): Networking/3_Security,_Performance_&_Modern_Networking/3.4_NAT_(Network_Address_Translation).md
+          - 3.5 Firewalls And VPNs: Networking/3_Security,_Performance_&_Modern_Networking/3.5_Firewalls_and_VPNs.md
+          - 3.6 WebSockets: Networking/3_Security,_Performance_&_Modern_Networking/3.6_WebSockets.md
+  - Node.Js:
+      - 1 Runtime & Event Driven Architecture:
+          - 1.1 The Event Loop Phases & MicroMacro Tasks: Node.js/1_Runtime_&_Event-Driven_Architecture/1.1_The_Event_Loop_Phases_&_MicroMacro_Tasks.md
+          - 1.2 Blocking Vs. Non Blocking IO Deep Dive: Node.js/1_Runtime_&_Event-Driven_Architecture/1.2_Blocking_vs._Non-Blocking_IO_Deep_Dive.md
+          - 1.3 Module Systems CommonJS (Require) Vs. ES Modules (Import): Node.js/1_Runtime_&_Event-Driven_Architecture/1.3_Module_Systems_CommonJS_(require)_vs._ES_Modules_(import).md
+          - 1.4 Global Objects `Process`, `  Dirname`, `  Filename`: Node.js/1_Runtime_&_Event-Driven_Architecture/1.4_Global_Objects_`process`,_`__dirname`,_`__filename`.md
+          - 1.5 EventEmitter Class For Event Driven Patterns: Node.js/1_Runtime_&_Event-Driven_Architecture/1.5_EventEmitter_Class_for_Event-Driven_Patterns.md
+          - 1.6 Core Modules `Fs`, `Path`, `Os`, `Http`: Node.js/1_Runtime_&_Event-Driven_Architecture/1.6_Core_Modules_`fs`,_`path`,_`os`,_`http`.md
+      - 2 System Interaction & Data Handling:
+          - 2.1 Streams Readable, Writable, Duplex, And Transform: Node.js/2_System_Interaction_&_Data_Handling/2.1_Streams_Readable,_Writable,_Duplex,_and_Transform.md
+          - 2.2 Buffers For Binary Data Manipulation: Node.js/2_System_Interaction_&_Data_Handling/2.2_Buffers_for_Binary_Data_Manipulation.md
+          - 2.3 Child Processes `Spawn`, `Exec`, `Fork`: Node.js/2_System_Interaction_&_Data_Handling/2.3_Child_Processes_`spawn`,_`exec`,_`fork`.md
+          - 2.4 Building An HTTP Server Without Frameworks: Node.js/2_System_Interaction_&_Data_Handling/2.4_Building_an_HTTP_Server_without_Frameworks.md
+          - 2.5 Middleware Pattern Implementation: Node.js/2_System_Interaction_&_Data_Handling/2.5_Middleware_Pattern_Implementation.md
+          - 2.6 Package Management & `Npm` Internals: Node.js/2_System_Interaction_&_Data_Handling/2.6_Package_Management_&_`npm`_Internals.md
+      - 3 Performance, Scalability & Security:
+          - 3.1 Concurrency Models Worker Threads Vs. Clustering: Node.js/3_Performance,_Scalability_&_Security/3.1_Concurrency_Models_Worker_Threads_vs._Clustering.md
+          - 3.2 Memory Management & Debugging Leaks In V8: Node.js/3_Performance,_Scalability_&_Security/3.2_Memory_Management_&_Debugging_Leaks_in_V8.md
+          - 3.3 Performance Profiling (CPU & Memory): Node.js/3_Performance,_Scalability_&_Security/3.3_Performance_Profiling_(CPU_&_Memory).md
+          - 3.4 Node.Js Security Vulnerabilities (E.G., Prototype Pollution, Request Smuggling): Node.js/3_Performance,_Scalability_&_Security/3.4_Node.js_Security_Vulnerabilities_(e.g.,_prototype_pollution,_request_smuggling).md
+          - 3.5 Extending Node.Js With C++ Addons (Node API): Node.js/3_Performance,_Scalability_&_Security/3.5_Extending_Node.js_with_C++_Addons_(Node-API).md
+          - 3.6 Networking With TCP (`Net`) & UDP (`Dgram`): Node.js/3_Performance,_Scalability_&_Security/3.6_Networking_with_TCP_(`net`)_&_UDP_(`dgram`).md
+  - OOPS:
+      - 1 Core OOP & SOLID Principles:
+          - 1.1 The Four Pillars Of OOP: OOPS/1_Core_OOP_&_SOLID_Principles/1.1_The_Four_Pillars_of_OOP.md
+          - 1.2 SOLID Principles: OOPS/1_Core_OOP_&_SOLID_Principles/1.2_SOLID_Principles.md
+          - 1.3 Composition Over Inheritance: OOPS/1_Core_OOP_&_SOLID_Principles/1.3_Composition_over_Inheritance.md
+          - 1.4 Introduction To Design Patterns (Categories): OOPS/1_Core_OOP_&_SOLID_Principles/1.4_Introduction_to_Design_Patterns_(Categories).md
+      - 2 Fundamental Creational Patterns:
+          - 2.1 Singleton Pattern: OOPS/2_Fundamental_Creational_Patterns/2.1_Singleton_Pattern.md
+          - 2.2 Factory Method Pattern: OOPS/2_Fundamental_Creational_Patterns/2.2_Factory_Method_Pattern.md
+          - 2.3 Abstract Factory Pattern: OOPS/2_Fundamental_Creational_Patterns/2.3_Abstract_Factory_Pattern.md
+          - 2.4 Builder Pattern: OOPS/2_Fundamental_Creational_Patterns/2.4_Builder_Pattern.md
+      - 3 Fundamental Structural Patterns:
+          - 3.1 Adapter Pattern: OOPS/3_Fundamental_Structural_Patterns/3.1_Adapter_Pattern.md
+          - 3.2 Decorator Pattern: OOPS/3_Fundamental_Structural_Patterns/3.2_Decorator_Pattern.md
+          - 3.3 Facade Pattern: OOPS/3_Fundamental_Structural_Patterns/3.3_Facade_Pattern.md
+          - 3.4 Proxy Pattern: OOPS/3_Fundamental_Structural_Patterns/3.4_Proxy_Pattern.md
+      - 4 Fundamental Behavioral Patterns:
+          - 4.1 Strategy Pattern: OOPS/4_Fundamental_Behavioral_Patterns/4.1_Strategy_Pattern.md
+          - 4.2 Observer Pattern: OOPS/4_Fundamental_Behavioral_Patterns/4.2_Observer_Pattern.md
+          - 4.3 Command Pattern: OOPS/4_Fundamental_Behavioral_Patterns/4.3_Command_Pattern.md
+          - 4.4 Template Method Pattern: OOPS/4_Fundamental_Behavioral_Patterns/4.4_Template_Method_Pattern.md
+      - 5 Advanced Structural Patterns:
+          - 5.1 Composite Pattern: OOPS/5_Advanced_Structural_Patterns/5.1_Composite_Pattern.md
+          - 5.2 Flyweight Pattern: OOPS/5_Advanced_Structural_Patterns/5.2_Flyweight_Pattern.md
+          - 5.3 Bridge Pattern: OOPS/5_Advanced_Structural_Patterns/5.3_Bridge_Pattern.md
+      - 6 Advanced Behavioral Patterns:
+          - 6.1 State Pattern: OOPS/6_Advanced_Behavioral_Patterns/6.1_State_Pattern.md
+          - 6.2 Chain Of Responsibility Pattern: OOPS/6_Advanced_Behavioral_Patterns/6.2_Chain_of_Responsibility_Pattern.md
+          - 6.3 Mediator Pattern: OOPS/6_Advanced_Behavioral_Patterns/6.3_Mediator_Pattern.md
+          - 6.4 Visitor Pattern: OOPS/6_Advanced_Behavioral_Patterns/6.4_Visitor_Pattern.md
+      - 7 System Design & Anti Patterns:
+          - 7.1 Combining Patterns: OOPS/7_System_Design_&_Anti-Patterns/7.1_Combining_Patterns.md
+          - 7.2 Common Anti Patterns: OOPS/7_System_Design_&_Anti-Patterns/7.2_Common_Anti-Patterns.md
+          - 7.3 Refactoring Towards Patterns: OOPS/7_System_Design_&_Anti-Patterns/7.3_Refactoring_Towards_Patterns.md
+          - 7.4 GRASP Principles: OOPS/7_System_Design_&_Anti-Patterns/7.4_GRASP_Principles.md
+  - Operating Systems:
+      - 1 Core OS Principles & Processes:
+          - 1.1 Kernel Vs. User Mode & System Calls: Operating_Systems/1_Core_OS_Principles_&_Processes/1.1_Kernel_vs._User_Mode_&_System_Calls.md
+          - 1.2 Processes Vs. Threads: Operating_Systems/1_Core_OS_Principles_&_Processes/1.2_Processes_vs._Threads.md
+          - 1.3 Process State Model (New, Ready, Running, Etc.): Operating_Systems/1_Core_OS_Principles_&_Processes/1.3_Process_State_Model_(New,_Ready,_Running,_etc.).md
+          - 1.4 Context Switching: Operating_Systems/1_Core_OS_Principles_&_Processes/1.4_Context_Switching.md
+          - 1.5 Inter Process Communication (IPC): Operating_Systems/1_Core_OS_Principles_&_Processes/1.5_Inter-Process_Communication_(IPC).md
+          - 1.6 OS Architectures (Monolithic Vs. Microkernel): Operating_Systems/1_Core_OS_Principles_&_Processes/1.6_OS_Architectures_(Monolithic_vs._Microkernel).md
+      - 2 Concurrency & Memory Management:
+          - 2.1 CPU Scheduling Algorithms (FCFS, SJF, Round Robin): Operating_Systems/2_Concurrency_&_Memory_Management/2.1_CPU_Scheduling_Algorithms_(FCFS,_SJF,_Round_Robin).md
+          - 2.2 Concurrency Issues Race Conditions, Deadlock, Starvation: Operating_Systems/2_Concurrency_&_Memory_Management/2.2_Concurrency_Issues_Race_Conditions,_Deadlock,_Starvation.md
+          - 2.3 Synchronization Primitives (Mutexes, Semaphores): Operating_Systems/2_Concurrency_&_Memory_Management/2.3_Synchronization_Primitives_(Mutexes,_Semaphores).md
+          - 2.4 Virtual Memory, Paging, And Page Tables: Operating_Systems/2_Concurrency_&_Memory_Management/2.4_Virtual_Memory,_Paging,_and_Page_Tables.md
+          - 2.5 Page Replacement Algorithms (FIFO, LRU, Optimal): Operating_Systems/2_Concurrency_&_Memory_Management/2.5_Page_Replacement_Algorithms_(FIFO,_LRU,_Optimal).md
+          - 2.6 Memory Fragmentation (Internal Vs. External): Operating_Systems/2_Concurrency_&_Memory_Management/2.6_Memory_Fragmentation_(Internal_vs._External).md
+      - 3 File Systems, IO, And Virtualization:
+          - 3.1 File System Internals (Inodes, Blocks, Superblock): Operating_Systems/3_File_Systems,_IO,_and_Virtualization/3.1_File_System_Internals_(Inodes,_Blocks,_Superblock).md
+          - 3.2 Journaling File Systems: Operating_Systems/3_File_Systems,_IO,_and_Virtualization/3.2_Journaling_File_Systems.md
+          - 3.3 IO Management (Polling, Interrupts, DMA): Operating_Systems/3_File_Systems,_IO,_and_Virtualization/3.3_IO_Management_(Polling,_Interrupts,_DMA).md
+          - 3.4 RAID Levels Explained (0, 1, 5, 10): Operating_Systems/3_File_Systems,_IO,_and_Virtualization/3.4_RAID_Levels_Explained_(0,_1,_5,_10).md
+          - 3.5 Virtualization And Hypervisors (Type 1 Vs. Type 2): Operating_Systems/3_File_Systems,_IO,_and_Virtualization/3.5_Virtualization_and_Hypervisors_(Type_1_vs._Type_2).md
+          - 3.6 OS Security Access Control And Sandboxing: Operating_Systems/3_File_Systems,_IO,_and_Virtualization/3.6_OS_Security_Access_Control_and_Sandboxing.md
+  - Postgres:
+      - 1 Core Concepts & Architecture:
+          - 1.1 Process Architecture (ClientServer Model): Postgres/1_Core_Concepts_&_Architecture/1.1_Process_Architecture_(ClientServer_Model).md
+          - 1.2 Data Storage Pages, Tuples, And Heap: Postgres/1_Core_Concepts_&_Architecture/1.2_Data_Storage_Pages,_Tuples,_and_Heap.md
+          - 1.3 Write Ahead Logging (WAL): Postgres/1_Core_Concepts_&_Architecture/1.3_Write-Ahead_Logging_(WAL).md
+          - 1.4 System Catalogs (E.G., Pg Class, Pg Attribute): Postgres/1_Core_Concepts_&_Architecture/1.4_System_Catalogs_(e.g.,_pg_class,_pg_attribute).md
+      - 2 Data Types & Basic Indexing:
+          - 2.1 Common Data Types (VARCHAR Vs TEXT, NUMERIC Vs FLOAT, TIMESTAMP Vs TIMESTAMPTZ): Postgres/2_Data_Types_&_Basic_Indexing/2.1_Common_Data_Types_(VARCHAR_vs_TEXT,_NUMERIC_vs_FLOAT,_TIMESTAMP_vs_TIMESTAMPTZ).md
+          - 2.2 JSON Vs JSONB Key Differences And Use Cases: Postgres/2_Data_Types_&_Basic_Indexing/2.2_JSON_vs_JSONB_Key_Differences_and_Use_Cases.md
+          - 2.3 Primary Keys, Foreign Keys, And Constraints (UNIQUE, NOT NULL, CHECK): Postgres/2_Data_Types_&_Basic_Indexing/2.3_Primary_Keys,_Foreign_Keys,_and_Constraints_(UNIQUE,_NOT_NULL,_CHECK).md
+          - 2.4 B Tree Indexing When And Why It'S The Default: Postgres/2_Data_Types_&_Basic_Indexing/2.4_B-Tree_Indexing_When_and_why_it's_the_default.md
+      - 3 Querying & Joins:
+          - 3.1 JOIN Types (INNER, LEFT, RIGHT, FULL OUTER, CROSS): Postgres/3_Querying_&_Joins/3.1_JOIN_Types_(INNER,_LEFT,_RIGHT,_FULL_OUTER,_CROSS).md
+          - 3.2 Subqueries Vs. Common Table Expressions (CTEs): Postgres/3_Querying_&_Joins/3.2_Subqueries_vs._Common_Table_Expressions_(CTEs).md
+          - 3.3 Aggregation With GROUP BY And HAVING: Postgres/3_Querying_&_Joins/3.3_Aggregation_with_GROUP_BY_and_HAVING.md
+          - 3.4 Window Functions (E.G., ROW NUMBER, RANK, LAG): Postgres/3_Querying_&_Joins/3.4_Window_Functions_(e.g.,_ROW_NUMBER,_RANK,_LAG).md
+      - 4 Transactions & Concurrency:
+          - 4.1 ACID Properties: Postgres/4_Transactions_&_Concurrency/4.1_ACID_Properties.md
+          - 4.2 Transaction Isolation Levels (Read Committed Vs. Repeatable Read Vs. Serializable): Postgres/4_Transactions_&_Concurrency/4.2_Transaction_Isolation_Levels_(Read_Committed_vs._Repeatable_Read_vs._Serializable).md
+          - 4.3 Multi Version Concurrency Control (MVCC): Postgres/4_Transactions_&_Concurrency/4.3_Multi-Version_Concurrency_Control_(MVCC).md
+          - 4.4 Deadlocks How They Happen And How To Prevent Them: Postgres/4_Transactions_&_Concurrency/4.4_Deadlocks_How_they_happen_and_how_to_prevent_them.md
+          - 4.5 Locking Mechanisms (Row Vs. Table Locks, Advisory Locks): Postgres/4_Transactions_&_Concurrency/4.5_Locking_Mechanisms_(Row_vs._Table_locks,_Advisory_Locks).md
+      - 5 Performance Tuning & Optimization:
+          - 5.1 Reading EXPLAIN ANALYZE Plans: Postgres/5_Performance_Tuning_&_Optimization/5.1_Reading_EXPLAIN_ANALYZE_plans.md
+          - 5.2 Index Types (B Tree, Hash, GIN, GiST, BRIN) And Use Cases: Postgres/5_Performance_Tuning_&_Optimization/5.2_Index_Types_(B-Tree,_Hash,_GIN,_GiST,_BRIN)_and_Use_Cases.md
+          - 5.3 Partial Indexes And Index Only Scans: Postgres/5_Performance_Tuning_&_Optimization/5.3_Partial_Indexes_and_Index-Only_Scans.md
+          - 5.4 Vacuuming, Autovacuum, And Table Bloat: Postgres/5_Performance_Tuning_&_Optimization/5.4_Vacuuming,_Autovacuum,_and_Table_Bloat.md
+          - 5.5 Connection Pooling: Postgres/5_Performance_Tuning_&_Optimization/5.5_Connection_Pooling.md
+      - 6 Replication & High Availability:
+          - 6.1 Streaming Replication (Asynchronous Vs. Synchronous): Postgres/6_Replication_&_High_Availability/6.1_Streaming_Replication_(Asynchronous_vs._Synchronous).md
+          - 6.2 Logical Vs. Physical Replication Trade Offs: Postgres/6_Replication_&_High_Availability/6.2_Logical_vs._Physical_Replication_Trade-offs.md
+          - 6.3 Failover And Switchover Strategies: Postgres/6_Replication_&_High_Availability/6.3_Failover_and_Switchover_Strategies.md
+          - 6.4 Backup And Point In Time Recovery (PITR): Postgres/6_Replication_&_High_Availability/6.4_Backup_and_Point-in-Time_Recovery_(PITR).md
+  - Redis:
+      - 1 Redis Fundamentals & Core Data Structures:
+          - 1.1 Redis Vs. Traditional DatabasesCaches: Redis/1_Redis_Fundamentals_&_Core_Data_Structures/1.1_Redis_vs._Traditional_DatabasesCaches.md
+          - 1.2 Single Threaded Nature & Concurrency: Redis/1_Redis_Fundamentals_&_Core_Data_Structures/1.2_Single-Threaded_Nature_&_Concurrency.md
+          - 1.3 Core Data Structures Strings, Hashes, Lists, Sets: Redis/1_Redis_Fundamentals_&_Core_Data_Structures/1.3_Core_Data_Structures_Strings,_Hashes,_Lists,_Sets.md
+          - 1.4 Sorted Sets (ZSETs) Use Cases (E.G., Leaderboards): Redis/1_Redis_Fundamentals_&_Core_Data_Structures/1.4_Sorted_Sets_(ZSETs)_Use_Cases_(e.g.,_Leaderboards).md
+          - 1.5 Key Management & Expiration (TTL): Redis/1_Redis_Fundamentals_&_Core_Data_Structures/1.5_Key_Management_&_Expiration_(TTL).md
+      - 2 Persistence & Data Durability:
+          - 2.1 RDB (Redis Database) Snapshots: Redis/2_Persistence_&_Data_Durability/2.1_RDB_(Redis_Database)_Snapshots.md
+          - 2.2 AOF (Append Only File) Logging: Redis/2_Persistence_&_Data_Durability/2.2_AOF_(Append_Only_File)_Logging.md
+          - 2.3 RDB Vs. AOF Trade Offs (Performance Vs. Durability): Redis/2_Persistence_&_Data_Durability/2.3_RDB_vs._AOF_Trade-offs_(Performance_vs._Durability).md
+          - 2.4 Backup And Restore Strategies: Redis/2_Persistence_&_Data_Durability/2.4_Backup_and_Restore_Strategies.md
+      - 3 Scalability & High Availability:
+          - 3.1 Replication (Master Slave Architecture): Redis/3_Scalability_&_High_Availability/3.1_Replication_(Master-Slave_Architecture).md
+          - 3.2 Redis Sentinel For High Availability: Redis/3_Scalability_&_High_Availability/3.2_Redis_Sentinel_for_High_Availability.md
+          - 3.3 Redis Cluster (ShardingData Partitioning): Redis/3_Scalability_&_High_Availability/3.3_Redis_Cluster_(ShardingData_Partitioning).md
+          - 3.4 Sentinel Vs. Cluster When To Use Which: Redis/3_Scalability_&_High_Availability/3.4_Sentinel_vs._Cluster_When_to_use_which.md
+      - 4 Performance Optimization & Memory Management:
+          - 4.1 Pipelining To Reduce Latency: Redis/4_Performance_Optimization_&_Memory_Management/4.1_Pipelining_to_Reduce_Latency.md
+          - 4.2 Memory Eviction Policies (LRU, LFU): Redis/4_Performance_Optimization_&_Memory_Management/4.2_Memory_Eviction_Policies_(LRU,_LFU).md
+          - 4.3 Identifying And Debugging Slow Commands (SLOWLOG): Redis/4_Performance_Optimization_&_Memory_Management/4.3_Identifying_and_Debugging_Slow_Commands_(SLOWLOG).md
+          - 4.4 Best Practices For Key Naming And Design: Redis/4_Performance_Optimization_&_Memory_Management/4.4_Best_Practices_for_Key_Naming_and_Design.md
+          - 4.5 Common Bottlenecks (E.G., KEYS Command): Redis/4_Performance_Optimization_&_Memory_Management/4.5_Common_Bottlenecks_(e.g.,_KEYS_command).md
+      - 5 Advanced Features & Scenarios:
+          - 5.1 Transactions (MULTIEXEC): Redis/5_Advanced_Features_&_Scenarios/5.1_Transactions_(MULTIEXEC).md
+          - 5.2 Lua Scripting For Atomic Operations: Redis/5_Advanced_Features_&_Scenarios/5.2_Lua_Scripting_for_Atomic_Operations.md
+          - 5.3 PubSub Messaging Paradigm: Redis/5_Advanced_Features_&_Scenarios/5.3_PubSub_Messaging_Paradigm.md
+          - 5.4 Implementing Distributed Locks: Redis/5_Advanced_Features_&_Scenarios/5.4_Implementing_Distributed_Locks.md
+          - 5.5 Advanced Data Structures (Streams, HyperLogLogs, Geospatial): Redis/5_Advanced_Features_&_Scenarios/5.5_Advanced_Data_Structures_(Streams,_HyperLogLogs,_Geospatial).md
+  - SQL:
+      - 1 Data Manipulation & Basic Retrieval:
+          - 1.1 `INSERT INTO` Adding New Rows: SQL/1_Data_Manipulation_&_Basic_Retrieval/1.1_`INSERT_INTO`_Adding_new_rows.md
+          - 1.2 `UPDATE ... WHERE` Modifying Existing Rows: SQL/1_Data_Manipulation_&_Basic_Retrieval/1.2_`UPDATE_..._WHERE`_Modifying_existing_rows.md
+          - 1.3 `DELETE FROM ... WHERE` Removing Specific Rows: SQL/1_Data_Manipulation_&_Basic_Retrieval/1.3_`DELETE_FROM_..._WHERE`_Removing_specific_rows.md
+          - 1.4 `SELECT, FROM, WHERE` Basic Data Retrieval And Filtering: SQL/1_Data_Manipulation_&_Basic_Retrieval/1.4_`SELECT,_FROM,_WHERE`_Basic_data_retrieval_and_filtering.md
+          - 1.5 Sorting With `ORDER BY` And Paginating With `LIMIT``OFFSET`: SQL/1_Data_Manipulation_&_Basic_Retrieval/1.5_Sorting_with_`ORDER_BY`_and_Paginating_with_`LIMIT``OFFSET`.md
+          - 1.6 `TRUNCATE` Vs. `DELETE` Key Differences: SQL/1_Data_Manipulation_&_Basic_Retrieval/1.6_`TRUNCATE`_vs._`DELETE`_Key_differences.md
+      - 2 Advanced DML & Multi Table Querying:
+          - 2.1 JOINs `INNER`, `LEFT``RIGHT` `OUTER`: SQL/2_Advanced_DML_&_Multi-Table_Querying/2.1_JOINs_`INNER`,_`LEFT``RIGHT`_`OUTER`.md
+          - 2.2 The `RETURNING` Clause With DML Statements: SQL/2_Advanced_DML_&_Multi-Table_Querying/2.2_The_`RETURNING`_clause_with_DML_statements.md
+          - 2.3 `INSERT ... ON CONFLICT` (Upsert): SQL/2_Advanced_DML_&_Multi-Table_Querying/2.3_`INSERT_..._ON_CONFLICT`_(Upsert).md
+          - 2.4 Aggregate Functions (`COUNT`, `SUM`, `AVG`) With `GROUP BY`: SQL/2_Advanced_DML_&_Multi-Table_Querying/2.4_Aggregate_Functions_(`COUNT`,_`SUM`,_`AVG`)_with_`GROUP_BY`.md
+          - 2.5 Filtering Groups With `HAVING`: SQL/2_Advanced_DML_&_Multi-Table_Querying/2.5_Filtering_Groups_with_`HAVING`.md
+          - 2.6 Subqueries (Scalar, Multi Row, Correlated): SQL/2_Advanced_DML_&_Multi-Table_Querying/2.6_Subqueries_(Scalar,_Multi-row,_Correlated).md
+      - 3 Analytical & Complex Queries:
+          - 3.1 Window Functions (`OVER`, `PARTITION BY`, `ROW NUMBER`, `RANK`): SQL/3_Analytical_&_Complex_Queries/3.1_Window_Functions_(`OVER`,_`PARTITION_BY`,_`ROW_NUMBER`,_`RANK`).md
+          - 3.2 Common Table Expressions (CTEs) (`WITH` Clause): SQL/3_Analytical_&_Complex_Queries/3.2_Common_Table_Expressions_(CTEs)_(`WITH`_clause).md
+          - 3.3 Recursive CTEs For Hierarchical Data: SQL/3_Analytical_&_Complex_Queries/3.3_Recursive_CTEs_for_Hierarchical_Data.md
+          - 3.4 Conditional Logic With `CASE` Statements: SQL/3_Analytical_&_Complex_Queries/3.4_Conditional_Logic_with_`CASE`_Statements.md
+          - 3.5 Querying JSONJSONB Data (` `, ` `, `@`): SQL/3_Analytical_&_Complex_Queries/3.5_Querying_JSONJSONB_Data_(`-`,_`-`,_`@`)_.md
+          - 3.6 Lateral Joins: SQL/3_Analytical_&_Complex_Queries/3.6_Lateral_Joins.md
+  - System Design:
+      - 1 Core Concepts & Trade Offs:
+          - 1.1 Performance Vs Scalability: System_Design/1_Core_Concepts_&_Trade-offs/1.1_Performance_vs_Scalability.md
+          - 1.2 Latency Vs Throughput: System_Design/1_Core_Concepts_&_Trade-offs/1.2_Latency_vs_Throughput.md
+          - 1.3 Availability Vs Consistency: System_Design/1_Core_Concepts_&_Trade-offs/1.3_Availability_vs_Consistency.md
+          - 1.4 CAP Theorem: System_Design/1_Core_Concepts_&_Trade-offs/1.4_CAP_Theorem.md
+      - 10 Monitoring & Observability:
+          - 10.1 Health Monitoring: System_Design/10_Monitoring_&_Observability/10.1_Health_Monitoring.md
+          - 10.2 Performance Monitoring: System_Design/10_Monitoring_&_Observability/10.2_Performance_Monitoring.md
+          - 10.3 Security Monitoring: System_Design/10_Monitoring_&_Observability/10.3_Security_Monitoring.md
+          - 10.4 Usage Monitoring & Instrumentation: System_Design/10_Monitoring_&_Observability/10.4_Usage_Monitoring_&_Instrumentation.md
+      - 11 Architectural Design Patterns:
+          - 11.1 Strangler Fig Pattern: System_Design/11_Architectural_Design_Patterns/11.1_Strangler_Fig_Pattern.md
+          - 11.2 Sidecar Pattern: System_Design/11_Architectural_Design_Patterns/11.2_Sidecar_Pattern.md
+          - 11.3 Gateway Patterns: System_Design/11_Architectural_Design_Patterns/11.3_Gateway_Patterns.md
+          - 11.4 Anti Corruption Layer: System_Design/11_Architectural_Design_Patterns/11.4_Anti-Corruption_Layer.md
+      - 12 Cloud Design Patterns:
+          - 12.1 CQRS & Event Sourcing: System_Design/12_Cloud_Design_Patterns/12.1_CQRS_&_Event_Sourcing.md
+          - 12.2 Data Management Patterns: System_Design/12_Cloud_Design_Patterns/12.2_Data_Management_Patterns.md
+          - 12.3 Messaging Patterns: System_Design/12_Cloud_Design_Patterns/12.3_Messaging_Patterns.md
+          - 12.4 Competing Consumers & Choreography: System_Design/12_Cloud_Design_Patterns/12.4_Competing_Consumers_&_Choreography.md
+      - 13 High Availability & Deployment:
+          - 13.1 Deployment Stamps: System_Design/13_High_Availability_&_Deployment/13.1_Deployment_Stamps.md
+          - 13.2 Geodes Pattern: System_Design/13_High_Availability_&_Deployment/13.2_Geodes_Pattern.md
+          - 13.3 Throttling Strategies: System_Design/13_High_Availability_&_Deployment/13.3_Throttling_Strategies.md
+          - 13.4 Leader Election: System_Design/13_High_Availability_&_Deployment/13.4_Leader_Election.md
+      - 14 Security & Identity Management:
+          - 14.1 Federated Identity: System_Design/14_Security_&_Identity_Management/14.1_Federated_Identity.md
+          - 14.2 Gatekeeper Pattern: System_Design/14_Security_&_Identity_Management/14.2_Gatekeeper_Pattern.md
+          - 14.3 Valet Key Pattern: System_Design/14_Security_&_Identity_Management/14.3_Valet_Key_Pattern.md
+          - 14.4 Security Best Practices: System_Design/14_Security_&_Identity_Management/14.4_Security_Best_Practices.md
+      - 2 Consistency & Availability Patterns:
+          - 2.1 Consistency Patterns: System_Design/2_Consistency_&_Availability_Patterns/2.1_Consistency_Patterns.md
+          - 2.2 Availability Patterns: System_Design/2_Consistency_&_Availability_Patterns/2.2_Availability_Patterns.md
+          - 2.3 Availability Numbers: System_Design/2_Consistency_&_Availability_Patterns/2.3_Availability_Numbers.md
+          - 2.4 Replication Strategies: System_Design/2_Consistency_&_Availability_Patterns/2.4_Replication_Strategies.md
+      - 3 Job Processing & Background Tasks:
+          - 3.1 Background Jobs: System_Design/3_Job_Processing_&_Background_Tasks/3.1_Background_Jobs.md
+          - 3.2 Task Queues: System_Design/3_Job_Processing_&_Background_Tasks/3.2_Task_Queues.md
+          - 3.3 Asynchronism: System_Design/3_Job_Processing_&_Background_Tasks/3.3_Asynchronism.md
+          - 3.4 Returning Results: System_Design/3_Job_Processing_&_Background_Tasks/3.4_Returning_Results.md
+      - 4 Domain Name System & Service Discovery:
+          - 4.1 Domain Name System: System_Design/4_Domain_Name_System_&_Service_Discovery/4.1_Domain_Name_System.md
+          - 4.2 Content Delivery Networks: System_Design/4_Domain_Name_System_&_Service_Discovery/4.2_Content_Delivery_Networks.md
+          - 4.3 Microservices: System_Design/4_Domain_Name_System_&_Service_Discovery/4.3_Microservices.md
+          - 4.4 Service Discovery: System_Design/4_Domain_Name_System_&_Service_Discovery/4.4_Service_Discovery.md
+      - 5 Data Storage Systems:
+          - 5.1 SQL Databases: System_Design/5_Data_Storage_Systems/5.1_SQL_Databases.md
+          - 5.2 RDBMS: System_Design/5_Data_Storage_Systems/5.2_RDBMS.md
+          - 5.3 NoSQL Types: System_Design/5_Data_Storage_Systems/5.3_NoSQL_Types.md
+          - 5.4 SQL Vs NoSQL: System_Design/5_Data_Storage_Systems/5.4_SQL_vs_NoSQL.md
+      - 6 Caching Strategies:
+          - 6.1 Cache Patterns: System_Design/6_Caching_Strategies/6.1_Cache_Patterns.md
+          - 6.2 Caching Levels: System_Design/6_Caching_Strategies/6.2_Caching_Levels.md
+          - 6.3 Types Of Caching: System_Design/6_Caching_Strategies/6.3_Types_of_Caching.md
+          - 6.4 Cache Invalidation: System_Design/6_Caching_Strategies/6.4_Cache_Invalidation.md
+      - 7 Load Balancing & Proxies:
+          - 7.1 Load Balancers: System_Design/7_Load_Balancing_&_Proxies/7.1_Load_Balancers.md
+          - 7.2 Layer 4 Vs Layer 7 Load Balancing: System_Design/7_Load_Balancing_&_Proxies/7.2_Layer_4_vs_Layer_7_Load_Balancing.md
+          - 7.3 Load Balancing Algorithms: System_Design/7_Load_Balancing_&_Proxies/7.3_Load_Balancing_Algorithms.md
+          - 7.4 LB Vs Reverse Proxy: System_Design/7_Load_Balancing_&_Proxies/7.4_LB_vs_Reverse_Proxy.md
+      - 8 Communication Protocols:
+          - 8.1 HTTPTCPUDP: System_Design/8_Communication_Protocols/8.1_HTTPTCPUDP.md
+          - 8.2 RPC Vs REST Vs GraphQL: System_Design/8_Communication_Protocols/8.2_RPC_vs_REST_vs_GraphQL.md
+          - 8.3 GRPC: System_Design/8_Communication_Protocols/8.3_gRPC.md
+          - 8.4 Communication Patterns: System_Design/8_Communication_Protocols/8.4_Communication_Patterns.md
+      - 9 Resilience & Fault Tolerance:
+          - 9.1 Timeouts & Retry Patterns: System_Design/9_Resilience_&_Fault_Tolerance/9.1_Timeouts_&_Retry_Patterns.md
+          - 9.2 Circuit Breaker: System_Design/9_Resilience_&_Fault_Tolerance/9.2_Circuit_Breaker.md
+          - 9.3 Bulkhead Pattern: System_Design/9_Resilience_&_Fault_Tolerance/9.3_Bulkhead_Pattern.md
+          - 9.4 Exponential Backoff & Jitter: System_Design/9_Resilience_&_Fault_Tolerance/9.4_Exponential_Backoff_&_Jitter.md
+  - TypeScript:
+      - 1 TypeScript Fundamentals & Core Concepts:
+          - 1.1 TypeScript Vs. JavaScript The 'Why': TypeScript/1_TypeScript_Fundamentals_&_Core_Concepts/1.1_TypeScript_vs._JavaScript_The_'Why'.md
+          - 1.2 The TypeScript Compiler (TSC) And `Tsconfig.Json`: TypeScript/1_TypeScript_Fundamentals_&_Core_Concepts/1.2_The_TypeScript_Compiler_(TSC)_and_`tsconfig.json`.md
+          - 1.3 Basic Types `String`, `Number`, `Boolean`, `Null`, `Undefined`, `Any`, `Unknown`, `Void`, `Never`: TypeScript/1_TypeScript_Fundamentals_&_Core_Concepts/1.3_Basic_Types_`string`,_`number`,_`boolean`,_`null`,_`undefined`,_`any`,_`unknown`,_`void`,_`never`.md
+          - 1.4 Type Inference Vs. Type Annotation: TypeScript/1_TypeScript_Fundamentals_&_Core_Concepts/1.4_Type_Inference_vs._Type_Annotation.md
+          - 1.5 Interfaces Vs. Type Aliases: TypeScript/1_TypeScript_Fundamentals_&_Core_Concepts/1.5_Interfaces_vs._Type_Aliases.md
+          - 1.6 Typing Arrays And Objects: TypeScript/1_TypeScript_Fundamentals_&_Core_Concepts/1.6_Typing_Arrays_and_Objects.md
+          - 1.7 Function Typing Parameters, Return Types, And Function Overloading: TypeScript/1_TypeScript_Fundamentals_&_Core_Concepts/1.7_Function_Typing_Parameters,_Return_Types,_and_Function_Overloading.md
+          - 1.8 Union And Intersection Types: TypeScript/1_TypeScript_Fundamentals_&_Core_Concepts/1.8_Union_and_Intersection_Types.md
+      - 2 Advanced Types And Generics:
+          - 2.1 Generics Functions, Interfaces, And Classes: TypeScript/2_Advanced_Types_and_Generics/2.1_Generics_Functions,_Interfaces,_and_Classes.md
+          - 2.2 Generic Constraints (`Extends` Keyword): TypeScript/2_Advanced_Types_and_Generics/2.2_Generic_Constraints_(`extends`_keyword).md
+          - 2.3 Key Utility Types `Partial`, `Readonly`, `Pick`, `Omit`, `Record`: TypeScript/2_Advanced_Types_and_Generics/2.3_Key_Utility_Types_`Partial`,_`Readonly`,_`Pick`,_`Omit`,_`Record`.md
+          - 2.4 Enums Numeric Vs. String Enums And Their Transpiled Output: TypeScript/2_Advanced_Types_and_Generics/2.4_Enums_Numeric_vs._String_Enums_and_their_transpiled_output.md
+          - 2.5 Type Guards And Narrowing (`Typeof`, `Instanceof`, `In`, Custom Type Guards): TypeScript/2_Advanced_Types_and_Generics/2.5_Type_Guards_and_Narrowing_(`typeof`,_`instanceof`,_`in`,_custom_type_guards).md
+          - 2.6 Indexed Access Types And `Keyof`: TypeScript/2_Advanced_Types_and_Generics/2.6_Indexed_Access_Types_and_`keyof`.md
+          - 2.7 Class Typing `Implements`, `Public``Private``Protected`, `Readonly` Properties: TypeScript/2_Advanced_Types_and_Generics/2.7_Class_Typing_`implements`,_`public``private``protected`,_`readonly`_properties.md
+          - 2.8 Handling `Null` And `Undefined` With `StrictNullChecks`: TypeScript/2_Advanced_Types_and_Generics/2.8_Handling_`null`_and_`undefined`_with_`strictNullChecks`.md
+      - 3 Type System Mastery & Architectural Patterns:
+          - 3.1 Conditional Types And The `Infer` Keyword: TypeScript/3_Type_System_Mastery_&_Architectural_Patterns/3.1_Conditional_Types_and_the_`infer`_keyword.md
+          - 3.2 Mapped Types And Template Literal Types: TypeScript/3_Type_System_Mastery_&_Architectural_Patterns/3.2_Mapped_Types_and_Template_Literal_Types.md
+          - 3.3 Advanced Utility Types `Exclude`, `Extract`, `NonNullable`, `ReturnType`, `Parameters`: TypeScript/3_Type_System_Mastery_&_Architectural_Patterns/3.3_Advanced_Utility_Types_`Exclude`,_`Extract`,_`NonNullable`,_`ReturnType`,_`Parameters`.md
+          - 3.4 Decorators Syntax, Use Cases (E.G., NestJS, Angular), And `ExperimentalDecorators`: TypeScript/3_Type_System_Mastery_&_Architectural_Patterns/3.4_Decorators_Syntax,_Use_Cases_(e.g.,_NestJS,_Angular),_and_`experimentalDecorators`.md
+          - 3.5 Module Resolution (`Paths` Aliasing, `RootDirs`): TypeScript/3_Type_System_Mastery_&_Architectural_Patterns/3.5_Module_Resolution_(`paths`_aliasing,_`rootDirs`).md
+          - 3.6 Declaration Files (`.D.Ts`) And Declaration Merging: TypeScript/3_Type_System_Mastery_&_Architectural_Patterns/3.6_Declaration_Files_(`.d.ts`)_and_Declaration_Merging.md
+          - 3.7 Branding And Nominal Typing: TypeScript/3_Type_System_Mastery_&_Architectural_Patterns/3.7_Branding_and_Nominal_Typing.md
+          - 3.8 Compiler Performance And Project References: TypeScript/3_Type_System_Mastery_&_Architectural_Patterns/3.8_Compiler_Performance_and_Project_References.md
