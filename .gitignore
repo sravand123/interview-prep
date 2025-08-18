@@ -50,6 +50,3 @@ temp/
 
 # Study guides output
 study-guides/
-
-# Roadmap file (contains sensitive data)
-roadmap.json

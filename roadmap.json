@@ -1,0 +1,1840 @@
+{
+  "concepts": [
+    {
+      "topic": "JavaScript",
+      "sections": [
+        {
+          "id": "1",
+          "level": "Beginner",
+          "section": "Core Concepts & Interview Fundamentals",
+          "description": "Foundational topics that are frequent interview questions, focusing on how JS actually works.",
+          "subtopics": [
+            {
+              "id": "1.1",
+              "title": "Execution Context & Hoisting"
+            },
+            {
+              "id": "1.2",
+              "title": "The 'this' Keyword"
+            },
+            {
+              "id": "1.3",
+              "title": "Closures & Scope"
+            },
+            {
+              "id": "1.4",
+              "title": "Prototypal Inheritance"
+            },
+            {
+              "id": "1.5",
+              "title": "Value vs. Reference Types"
+            },
+            {
+              "id": "1.6",
+              "title": "Equality (== vs ===, Type Coercion)"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "level": "Intermediate",
+          "section": "Asynchronous JavaScript & Modern Features",
+          "description": "Mastering how JavaScript handles concurrency and leveraging modern ES6+ syntax.",
+          "subtopics": [
+            {
+              "id": "2.1",
+              "title": "The Event Loop"
+            },
+            {
+              "id": "2.2",
+              "title": "Callbacks, Promises, and the Microtask Queue"
+            },
+            {
+              "id": "2.3",
+              "title": "Async/Await"
+            },
+            {
+              "id": "2.4",
+              "title": "ES6+ Data Structures (Map, Set, WeakMap)"
+            },
+            {
+              "id": "2.5",
+              "title": "Array Methods & Higher-Order Functions (map, filter, reduce)"
+            },
+            {
+              "id": "2.6",
+              "title": "Destructuring & Spread/Rest Operators"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "level": "Advanced",
+          "section": "Performance, Architecture, and the Browser",
+          "description": "Topics demonstrating a deep understanding of performance, application structure, and browser APIs.",
+          "subtopics": [
+            {
+              "id": "3.1",
+              "title": "Memory Management & Garbage Collection"
+            },
+            {
+              "id": "3.2",
+              "title": "Event Bubbling, Capturing, and Delegation"
+            },
+            {
+              "id": "3.3",
+              "title": "Modules & Bundlers (ESM vs CommonJS, Webpack/Vite basics)"
+            },
+            {
+              "id": "3.4",
+              "title": "Debouncing and Throttling"
+            },
+            {
+              "id": "3.5",
+              "title": "Generators and Iterators"
+            },
+            {
+              "id": "3.6",
+              "title": "Web Workers & Concurrency"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Node.js",
+      "sections": [
+        {
+          "id": "1",
+          "level": "Beginner",
+          "section": "Runtime & Event-Driven Architecture",
+          "description": "Foundational Node.js specifics, focusing on its non-blocking I/O model and core APIs separate from browser JavaScript.",
+          "subtopics": [
+            {
+              "id": "1.1",
+              "title": "The Event Loop: Phases & Micro/Macro Tasks"
+            },
+            {
+              "id": "1.2",
+              "title": "Blocking vs. Non-Blocking I/O Deep Dive"
+            },
+            {
+              "id": "1.3",
+              "title": "Module Systems: CommonJS (require) vs. ES Modules (import)"
+            },
+            {
+              "id": "1.4",
+              "title": "Global Objects: `process`, `__dirname`, `__filename`"
+            },
+            {
+              "id": "1.5",
+              "title": "EventEmitter Class for Event-Driven Patterns"
+            },
+            {
+              "id": "1.6",
+              "title": "Core Modules: `fs`, `path`, `os`, `http`"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "level": "Intermediate",
+          "section": "System Interaction & Data Handling",
+          "description": "Mastering how Node.js handles data streams, binary data, and interacts with the underlying operating system.",
+          "subtopics": [
+            {
+              "id": "2.1",
+              "title": "Streams: Readable, Writable, Duplex, and Transform"
+            },
+            {
+              "id": "2.2",
+              "title": "Buffers for Binary Data Manipulation"
+            },
+            {
+              "id": "2.3",
+              "title": "Child Processes: `spawn`, `exec`, `fork`"
+            },
+            {
+              "id": "2.4",
+              "title": "Building an HTTP Server without Frameworks"
+            },
+            {
+              "id": "2.5",
+              "title": "Middleware Pattern Implementation"
+            },
+            {
+              "id": "2.6",
+              "title": "Package Management & `npm` Internals"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "level": "Advanced",
+          "section": "Performance, Scalability & Security",
+          "description": "Topics for senior roles, focusing on optimizing Node.js applications for production environments and handling high concurrency.",
+          "subtopics": [
+            {
+              "id": "3.1",
+              "title": "Concurrency Models: Worker Threads vs. Clustering"
+            },
+            {
+              "id": "3.2",
+              "title": "Memory Management & Debugging Leaks in V8"
+            },
+            {
+              "id": "3.3",
+              "title": "Performance Profiling (CPU & Memory)"
+            },
+            {
+              "id": "3.4",
+              "title": "Node.js Security Vulnerabilities (e.g., prototype pollution, request smuggling)"
+            },
+            {
+              "id": "3.5",
+              "title": "Extending Node.js with C++ Addons (Node-API)"
+            },
+            {
+              "id": "3.6",
+              "title": "Networking with TCP (`net`) & UDP (`dgram`)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Postgres",
+      "sections": [
+        {
+          "id": "1",
+          "level": "Beginner",
+          "section": "Core Concepts & Architecture",
+          "description": "Fundamental architecture and principles essential for any Postgres interview.",
+          "subtopics": [
+            {
+              "id": "1.1",
+              "title": "Process Architecture (Client/Server Model)"
+            },
+            {
+              "id": "1.2",
+              "title": "Data Storage: Pages, Tuples, and Heap"
+            },
+            {
+              "id": "1.3",
+              "title": "Write-Ahead Logging (WAL)"
+            },
+            {
+              "id": "1.4",
+              "title": "System Catalogs (e.g., pg_class, pg_attribute)"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "level": "Beginner",
+          "section": "Data Types & Basic Indexing",
+          "description": "Understanding how data is stored and retrieved efficiently at a basic level.",
+          "subtopics": [
+            {
+              "id": "2.1",
+              "title": "Common Data Types (VARCHAR vs TEXT, NUMERIC vs FLOAT, TIMESTAMP vs TIMESTAMPTZ)"
+            },
+            {
+              "id": "2.2",
+              "title": "JSON vs JSONB: Key Differences and Use Cases"
+            },
+            {
+              "id": "2.3",
+              "title": "Primary Keys, Foreign Keys, and Constraints (UNIQUE, NOT NULL, CHECK)"
+            },
+            {
+              "id": "2.4",
+              "title": "B-Tree Indexing: When and why it's the default"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "level": "Intermediate",
+          "section": "Querying & Joins",
+          "description": "Mastering data retrieval and aggregation from multiple tables.",
+          "subtopics": [
+            {
+              "id": "3.1",
+              "title": "JOIN Types (INNER, LEFT, RIGHT, FULL OUTER, CROSS)"
+            },
+            {
+              "id": "3.2",
+              "title": "Subqueries vs. Common Table Expressions (CTEs)"
+            },
+            {
+              "id": "3.3",
+              "title": "Aggregation with GROUP BY and HAVING"
+            },
+            {
+              "id": "3.4",
+              "title": "Window Functions (e.g., ROW_NUMBER, RANK, LAG)"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "level": "Intermediate",
+          "section": "Transactions & Concurrency",
+          "description": "Ensuring data integrity in a multi-user environment, a critical interview topic.",
+          "subtopics": [
+            {
+              "id": "4.1",
+              "title": "ACID Properties"
+            },
+            {
+              "id": "4.2",
+              "title": "Transaction Isolation Levels (Read Committed vs. Repeatable Read vs. Serializable)"
+            },
+            {
+              "id": "4.3",
+              "title": "Multi-Version Concurrency Control (MVCC)"
+            },
+            {
+              "id": "4.4",
+              "title": "Deadlocks: How they happen and how to prevent them"
+            },
+            {
+              "id": "4.5",
+              "title": "Locking Mechanisms (Row vs. Table locks, Advisory Locks)"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "level": "Advanced",
+          "section": "Performance Tuning & Optimization",
+          "description": "Diagnosing and resolving performance bottlenecks, a key skill for senior roles.",
+          "subtopics": [
+            {
+              "id": "5.1",
+              "title": "Reading EXPLAIN ANALYZE plans"
+            },
+            {
+              "id": "5.2",
+              "title": "Index Types (B-Tree, Hash, GIN, GiST, BRIN) and Use Cases"
+            },
+            {
+              "id": "5.3",
+              "title": "Partial Indexes and Index-Only Scans"
+            },
+            {
+              "id": "5.4",
+              "title": "Vacuuming, Autovacuum, and Table Bloat"
+            },
+            {
+              "id": "5.5",
+              "title": "Connection Pooling"
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "level": "Advanced",
+          "section": "Replication & High Availability",
+          "description": "Architecting resilient and scalable database systems.",
+          "subtopics": [
+            {
+              "id": "6.1",
+              "title": "Streaming Replication (Asynchronous vs. Synchronous)"
+            },
+            {
+              "id": "6.2",
+              "title": "Logical vs. Physical Replication: Trade-offs"
+            },
+            {
+              "id": "6.3",
+              "title": "Failover and Switchover Strategies"
+            },
+            {
+              "id": "6.4",
+              "title": "Backup and Point-in-Time Recovery (PITR)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Redis",
+      "sections": [
+        {
+          "id": "1",
+          "level": "Beginner",
+          "section": "Redis Fundamentals & Core Data Structures",
+          "description": "Core concepts and the most common data structures. Essential for any Redis interview.",
+          "subtopics": [
+            {
+              "id": "1.1",
+              "title": "Redis vs. Traditional Databases/Caches"
+            },
+            {
+              "id": "1.2",
+              "title": "Single-Threaded Nature & Concurrency"
+            },
+            {
+              "id": "1.3",
+              "title": "Core Data Structures: Strings, Hashes, Lists, Sets"
+            },
+            {
+              "id": "1.4",
+              "title": "Sorted Sets (ZSETs) Use Cases (e.g., Leaderboards)"
+            },
+            {
+              "id": "1.5",
+              "title": "Key Management & Expiration (TTL)"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "level": "Intermediate",
+          "section": "Persistence & Data Durability",
+          "description": "Understanding how Redis handles data persistence, a frequent topic for comparing trade-offs.",
+          "subtopics": [
+            {
+              "id": "2.1",
+              "title": "RDB (Redis Database) Snapshots"
+            },
+            {
+              "id": "2.2",
+              "title": "AOF (Append Only File) Logging"
+            },
+            {
+              "id": "2.3",
+              "title": "RDB vs. AOF: Trade-offs (Performance vs. Durability)"
+            },
+            {
+              "id": "2.4",
+              "title": "Backup and Restore Strategies"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "level": "Intermediate",
+          "section": "Scalability & High Availability",
+          "description": "Mechanisms for scaling Redis and ensuring it remains available in production.",
+          "subtopics": [
+            {
+              "id": "3.1",
+              "title": "Replication (Master-Slave Architecture)"
+            },
+            {
+              "id": "3.2",
+              "title": "Redis Sentinel for High Availability"
+            },
+            {
+              "id": "3.3",
+              "title": "Redis Cluster (Sharding/Data Partitioning)"
+            },
+            {
+              "id": "3.4",
+              "title": "Sentinel vs. Cluster: When to use which"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "level": "Advanced",
+          "section": "Performance Optimization & Memory Management",
+          "description": "Deep dive into performance tuning, memory optimization, and debugging.",
+          "subtopics": [
+            {
+              "id": "4.1",
+              "title": "Pipelining to Reduce Latency"
+            },
+            {
+              "id": "4.2",
+              "title": "Memory Eviction Policies (LRU, LFU)"
+            },
+            {
+              "id": "4.3",
+              "title": "Identifying and Debugging Slow Commands (SLOWLOG)"
+            },
+            {
+              "id": "4.4",
+              "title": "Best Practices for Key Naming and Design"
+            },
+            {
+              "id": "4.5",
+              "title": "Common Bottlenecks (e.g., KEYS command)"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "level": "Advanced",
+          "section": "Advanced Features & Scenarios",
+          "description": "Complex features and real-world application scenarios often posed in senior-level interviews.",
+          "subtopics": [
+            {
+              "id": "5.1",
+              "title": "Transactions (MULTI/EXEC)"
+            },
+            {
+              "id": "5.2",
+              "title": "Lua Scripting for Atomic Operations"
+            },
+            {
+              "id": "5.3",
+              "title": "Pub/Sub Messaging Paradigm"
+            },
+            {
+              "id": "5.4",
+              "title": "Implementing Distributed Locks"
+            },
+            {
+              "id": "5.5",
+              "title": "Advanced Data Structures (Streams, HyperLogLogs, Geospatial)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "System Design",
+      "sections": [
+        {
+          "id": "1",
+          "level": "Fundamentals",
+          "section": "Core Concepts & Trade-offs",
+          "description": "Essential principles and theoretical foundations for system design.",
+          "subtopics": [
+            {
+              "id": "1.1",
+              "title": "Performance vs Scalability",
+              "hint": "Explain when to optimize for performance vs when to scale horizontally."
+            },
+            {
+              "id": "1.2",
+              "title": "Latency vs Throughput",
+              "hint": "Describe scenarios where you optimize for low latency vs high throughput."
+            },
+            {
+              "id": "1.3",
+              "title": "Availability vs Consistency",
+              "hint": "Discuss the trade-offs and when to choose one over the other."
+            },
+            {
+              "id": "1.4",
+              "title": "CAP Theorem",
+              "hint": "Explain AP (Availability + Partition Tolerance) vs CP (Consistency + Partition Tolerance)."
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "level": "Fundamentals",
+          "section": "Consistency & Availability Patterns",
+          "description": "Understanding consistency models and availability requirements.",
+          "subtopics": [
+            {
+              "id": "2.1",
+              "title": "Consistency Patterns",
+              "hint": "Compare Weak, Eventual, and Strong consistency with real-world examples."
+            },
+            {
+              "id": "2.2",
+              "title": "Availability Patterns",
+              "hint": "Explain Active-Active vs Active-Passive failover strategies."
+            },
+            {
+              "id": "2.3",
+              "title": "Availability Numbers",
+              "hint": "Calculate downtime for 99.9% vs 99.99% availability and series vs parallel systems."
+            },
+            {
+              "id": "2.4",
+              "title": "Replication Strategies",
+              "hint": "Compare Master-Slave, Master-Master, and Federation approaches."
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "level": "Intermediate",
+          "section": "Job Processing & Background Tasks",
+          "description": "Handling asynchronous processing and background job management.",
+          "subtopics": [
+            {
+              "id": "3.1",
+              "title": "Background Jobs",
+              "hint": "Design event-driven vs schedule-driven job processing systems."
+            },
+            {
+              "id": "3.2",
+              "title": "Task Queues",
+              "hint": "Explain message queues, task queues, and back pressure handling."
+            },
+            {
+              "id": "3.3",
+              "title": "Asynchronism",
+              "hint": "Describe async processing patterns and their benefits."
+            },
+            {
+              "id": "3.4",
+              "title": "Returning Results",
+              "hint": "How do you handle result delivery for long-running background jobs?"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "level": "Intermediate",
+          "section": "Domain Name System & Service Discovery",
+          "description": "DNS, CDN, and service discovery mechanisms.",
+          "subtopics": [
+            {
+              "id": "4.1",
+              "title": "Domain Name System",
+              "hint": "Explain DNS resolution process and DNS-based load balancing."
+            },
+            {
+              "id": "4.2",
+              "title": "Content Delivery Networks",
+              "hint": "Compare Push CDNs vs Pull CDNs and their use cases."
+            },
+            {
+              "id": "4.3",
+              "title": "Microservices",
+              "hint": "Discuss microservice architecture benefits and challenges."
+            },
+            {
+              "id": "4.4",
+              "title": "Service Discovery",
+              "hint": "How do services find and register with each other dynamically?"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "level": "Intermediate",
+          "section": "Data Storage Systems",
+          "description": "SQL, NoSQL databases and data storage strategies.",
+          "subtopics": [
+            {
+              "id": "5.1",
+              "title": "SQL Databases",
+              "hint": "Explain ACID properties, replication, sharding, denormalization, and SQL tuning."
+            },
+            {
+              "id": "5.2",
+              "title": "RDBMS",
+              "hint": "When to choose relational databases and their scaling strategies."
+            },
+            {
+              "id": "5.3",
+              "title": "NoSQL Types",
+              "hint": "Compare Key-Value, Document, Wide Column, and Graph databases."
+            },
+            {
+              "id": "5.4",
+              "title": "SQL vs NoSQL",
+              "hint": "Decision criteria for choosing between SQL and NoSQL solutions."
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "level": "Intermediate",
+          "section": "Caching Strategies",
+          "description": "Multi-level caching approaches and cache management.",
+          "subtopics": [
+            {
+              "id": "6.1",
+              "title": "Cache Patterns",
+              "hint": "Explain Cache Aside, Write-through, Write-behind, and Refresh ahead strategies."
+            },
+            {
+              "id": "6.2",
+              "title": "Caching Levels",
+              "hint": "Design multi-level caching: Client, CDN, Web Server, Database, Application."
+            },
+            {
+              "id": "6.3",
+              "title": "Types of Caching",
+              "hint": "Compare different caching implementations and their trade-offs."
+            },
+            {
+              "id": "6.4",
+              "title": "Cache Invalidation",
+              "hint": "How do you handle cache consistency and invalidation strategies?"
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "level": "Intermediate",
+          "section": "Load Balancing & Proxies",
+          "description": "Traffic distribution and reverse proxy configurations.",
+          "subtopics": [
+            {
+              "id": "7.1",
+              "title": "Load Balancers",
+              "hint": "Design load balancer placement and failover strategies."
+            },
+            {
+              "id": "7.2",
+              "title": "Layer 4 vs Layer 7 Load Balancing",
+              "hint": "Compare transport layer vs application layer load balancing."
+            },
+            {
+              "id": "7.3",
+              "title": "Load Balancing Algorithms",
+              "hint": "Explain Round Robin, Least Connections, Weighted algorithms."
+            },
+            {
+              "id": "7.4",
+              "title": "LB vs Reverse Proxy",
+              "hint": "When to use load balancers vs reverse proxies and their differences."
+            },
+            {
+              "id": "7.5",
+              "title": "Horizontal Scaling",
+              "hint": "Discuss the principles and benefits of scaling out by adding more machines."
+            }
+          ]
+        },
+        {
+          "id": "8",
+          "level": "Intermediate",
+          "section": "Communication Protocols",
+          "description": "Network protocols and inter-service communication.",
+          "subtopics": [
+            {
+              "id": "8.1",
+              "title": "HTTP/TCP/UDP",
+              "hint": "When to use each protocol and their characteristics."
+            },
+            {
+              "id": "8.2",
+              "title": "RPC vs REST vs GraphQL",
+              "hint": "Compare Remote Procedure Calls, REST APIs, and GraphQL."
+            },
+            {
+              "id": "8.3",
+              "title": "gRPC",
+              "hint": "Benefits of gRPC over traditional REST APIs."
+            },
+            {
+              "id": "8.4",
+              "title": "Communication Patterns",
+              "hint": "Synchronous vs asynchronous communication trade-offs."
+            },
+            {
+              "id": "8.5",
+              "title": "Idempotent Operations",
+              "hint": "Explain the importance of idempotent operations in distributed systems and how to design them."
+            }
+          ]
+        },
+        {
+          "id": "9",
+          "level": "Advanced",
+          "section": "Resilience & Fault Tolerance",
+          "description": "Building systems that gracefully handle failures.",
+          "subtopics": [
+            {
+              "id": "9.1",
+              "title": "Timeouts & Retry Patterns",
+              "hint": "Implement proper timeout handling and avoid retry storms."
+            },
+            {
+              "id": "9.2",
+              "title": "Circuit Breaker",
+              "hint": "Prevent cascading failures with circuit breaker pattern."
+            },
+            {
+              "id": "9.3",
+              "title": "Bulkhead Pattern",
+              "hint": "Isolate resources to prevent failure propagation."
+            },
+            {
+              "id": "9.4",
+              "title": "Exponential Backoff & Jitter",
+              "hint": "Handle transient failures with proper backoff strategies."
+            },
+            {
+              "id": "9.5",
+              "title": "Compensating Transaction",
+              "hint": "Design operations that can undo or compensate for a series of failed steps in a distributed transaction."
+            }
+          ]
+        },
+        {
+          "id": "10",
+          "level": "Advanced",
+          "section": "Monitoring & Observability",
+          "description": "System health monitoring and debugging capabilities.",
+          "subtopics": [
+            {
+              "id": "10.1",
+              "title": "Health Monitoring",
+              "hint": "Design comprehensive health checks for distributed systems."
+            },
+            {
+              "id": "10.2",
+              "title": "Performance Monitoring",
+              "hint": "Track key performance metrics and SLI/SLO implementation."
+            },
+            {
+              "id": "10.3",
+              "title": "Security Monitoring",
+              "hint": "Detect and respond to security threats and anomalies."
+            },
+            {
+              "id": "10.4",
+              "title": "Usage Monitoring & Instrumentation",
+              "hint": "Implement logging, metrics, and distributed tracing."
+            },
+            {
+              "id": "10.5",
+              "title": "Availability Monitoring",
+              "hint": "Techniques for monitoring and reporting on system uptime and availability."
+            },
+            {
+              "id": "10.6",
+              "title": "Visualization & Alerts",
+              "hint": "Best practices for creating dashboards and setting up effective alerting."
+            }
+          ]
+        },
+        {
+          "id": "11",
+          "level": "Advanced",
+          "section": "Architectural Design Patterns",
+          "description": "Advanced patterns for system design and implementation.",
+          "subtopics": [
+            {
+              "id": "11.1",
+              "title": "Strangler Fig Pattern",
+              "hint": "Gradually migrate from monolith to microservices."
+            },
+            {
+              "id": "11.2",
+              "title": "Sidecar Pattern",
+              "hint": "Deploy auxiliary services alongside main applications."
+            },
+            {
+              "id": "11.3",
+              "title": "Gateway Patterns",
+              "hint": "Implement Gateway Routing, Offloading, and Aggregation."
+            },
+            {
+              "id": "11.4",
+              "title": "Anti-Corruption Layer",
+              "hint": "Isolate different subsystems with translation layers."
+            },
+            {
+              "id": "11.5",
+              "title": "Pipes & Filters",
+              "hint": "Create a chain of processing elements for stream processing."
+            },
+            {
+              "id": "11.6",
+              "title": "Ambassador",
+              "hint": "Use a proxy service to handle common connectivity tasks like monitoring and routing."
+            },
+            {
+              "id": "11.7",
+              "title": "External Config Store",
+              "hint": "Manage application configuration in an external, centralized location."
+            },
+            {
+              "id": "11.8",
+              "title": "Compute Resource Consolidation",
+              "hint": "Optimize resource utilization by consolidating multiple tasks onto a single host."
+            },
+            {
+              "id": "11.9",
+              "title": "Backends for Frontend",
+              "hint": "Create separate backend services for different frontend applications or interfaces."
+            }
+          ]
+        },
+        {
+          "id": "12",
+          "level": "Advanced",
+          "section": "Cloud Design Patterns",
+          "description": "Cloud-native patterns for scalable distributed systems.",
+          "subtopics": [
+            {
+              "id": "12.1",
+              "title": "CQRS & Event Sourcing",
+              "hint": "Separate read/write models and store events vs current state."
+            },
+            {
+              "id": "12.2",
+              "title": "Data Management Patterns",
+              "hint": "Implement Valet Key, Static Content Hosting, and Sharding."
+            },
+            {
+              "id": "12.3",
+              "title": "Messaging Patterns",
+              "hint": "Design Publisher/Subscriber, Queue-based Load Leveling, Saga patterns."
+            },
+            {
+              "id": "12.4",
+              "title": "Competing Consumers & Choreography",
+              "hint": "Handle parallel processing and service orchestration."
+            },
+            {
+              "id": "12.5",
+              "title": "Materialized View",
+              "hint": "Pre-calculate and store aggregated data to speed up queries."
+            },
+            {
+              "id": "12.6",
+              "title": "Index Table",
+              "hint": "Create secondary indexes to improve query performance on data stores."
+            },
+            {
+              "id": "12.7",
+              "title": "Advanced Messaging Patterns",
+              "hint": "Explore patterns like Sequential Convoy, Scheduling Agent Supervisor, Priority Queue, Claim Check, and Async Request-Reply."
+            }
+          ]
+        },
+        {
+          "id": "13",
+          "level": "Expert",
+          "section": "High Availability & Deployment",
+          "description": "Strategies for zero-downtime deployments and high availability.",
+          "subtopics": [
+            {
+              "id": "13.1",
+              "title": "Deployment Stamps",
+              "hint": "Scale by replicating entire application stacks."
+            },
+            {
+              "id": "13.2",
+              "title": "Geodes Pattern",
+              "hint": "Deploy services close to users geographically."
+            },
+            {
+              "id": "13.3",
+              "title": "Throttling Strategies",
+              "hint": "Protect services from overload with rate limiting."
+            },
+            {
+              "id": "13.4",
+              "title": "Leader Election",
+              "hint": "Coordinate distributed systems with leader selection."
+            },
+            {
+              "id": "13.5",
+              "title": "Health Endpoint Monitoring",
+              "hint": "Implement health check endpoints for services to report their status."
+            }
+          ]
+        },
+        {
+          "id": "14",
+          "level": "Expert",
+          "section": "Security & Identity Management",
+          "description": "Authentication, authorization, and security patterns.",
+          "subtopics": [
+            {
+              "id": "14.1",
+              "title": "Federated Identity",
+              "hint": "Implement cross-domain authentication and SSO."
+            },
+            {
+              "id": "14.2",
+              "title": "Gatekeeper Pattern",
+              "hint": "Validate and sanitize requests at entry points."
+            },
+            {
+              "id": "14.3",
+              "title": "Valet Key Pattern",
+              "hint": "Provide limited access to resources without exposing credentials."
+            },
+            {
+              "id": "14.4",
+              "title": "Security Best Practices",
+              "hint": "Implement defense in depth and security monitoring."
+            }
+          ]
+        },
+        {
+          "id": "15",
+          "level": "Advanced",
+          "section": "Performance Antipatterns",
+          "description": "Common practices that are likely to cause scalability problems when an application is under pressure. [4, 5]",
+          "subtopics": [
+            {
+              "id": "15.1",
+              "title": "Improper Instantiation",
+              "hint": "Avoid repeatedly creating objects that are designed to be created once and shared, which can exhaust resources like connections or memory. [11]"
+            },
+            {
+              "id": "15.2",
+              "title": "Monolithic Persistence",
+              "hint": "Using a single data store for all types of data can lead to resource contention and may not be the optimal choice for different data usage patterns. [1]"
+            },
+            {
+              "id": "15.3",
+              "title": "Busy Database",
+              "hint": "Offloading excessive processing (like formatting data or complex calculations) to the database server, which should be focused on data storage and retrieval. [6, 13]"
+            },
+            {
+              "id": "15.4",
+              "title": "Busy Frontend",
+              "hint": "Performing resource-intensive tasks on foreground threads can block user interactions and make the application unresponsive; these should be offloaded to background workers. [10]"
+            },
+            {
+              "id": "15.5",
+              "title": "Noisy Neighbor",
+              "hint": "In a multi-tenant environment, one tenant's disproportionate use of resources negatively impacts the performance for other tenants on the same shared infrastructure. [7, 18]"
+            },
+            {
+              "id": "15.6",
+              "title": "Chatty I/O",
+              "hint": "Making a large number of small, frequent I/O requests (e.g., network or database calls) creates significant overhead and increases latency. [3, 8]"
+            },
+            {
+              "id": "15.7",
+              "title": "Synchronous I/O",
+              "hint": "Blocking the calling thread while waiting for an I/O operation to complete wastes processing resources and can harm scalability. [14, 31]"
+            },
+            {
+              "id": "15.8",
+              "title": "Retry Storm",
+              "hint": "When a service is unavailable, having too many clients retrying aggressively can overwhelm the service, preventing it from recovering. [20, 24, 26]"
+            },
+            {
+              "id": "15.9",
+              "title": "Extraneous Fetching",
+              "hint": "Retrieving more data than is actually needed for an operation, resulting in unnecessary I/O overhead and increased response times. [9, 12]"
+            },
+            {
+              "id": "15.10",
+              "title": "No Caching",
+              "hint": "Failing to cache frequently accessed but rarely changing data leads to repeatedly fetching the same information, which reduces performance and scalability. [2]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Operating Systems",
+      "sections": [
+        {
+          "id": "1",
+          "level": "Beginner",
+          "section": "Core OS Principles & Processes",
+          "description": "The absolute fundamentals: what an OS does, how it's structured, and how it manages running programs.",
+          "subtopics": [
+            {
+              "id": "1.1",
+              "title": "Kernel vs. User Mode & System Calls"
+            },
+            {
+              "id": "1.2",
+              "title": "Processes vs. Threads"
+            },
+            {
+              "id": "1.3",
+              "title": "Process State Model (New, Ready, Running, etc.)"
+            },
+            {
+              "id": "1.4",
+              "title": "Context Switching"
+            },
+            {
+              "id": "1.5",
+              "title": "Inter-Process Communication (IPC)"
+            },
+            {
+              "id": "1.6",
+              "title": "OS Architectures (Monolithic vs. Microkernel)"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "level": "Intermediate",
+          "section": "Concurrency & Memory Management",
+          "description": "The heart of OS interviews: how the OS handles multiple tasks safely and allocates memory efficiently.",
+          "subtopics": [
+            {
+              "id": "2.1",
+              "title": "CPU Scheduling Algorithms (FCFS, SJF, Round Robin)"
+            },
+            {
+              "id": "2.2",
+              "title": "Concurrency Issues: Race Conditions, Deadlock, Starvation"
+            },
+            {
+              "id": "2.3",
+              "title": "Synchronization Primitives (Mutexes, Semaphores)"
+            },
+            {
+              "id": "2.4",
+              "title": "Virtual Memory, Paging, and Page Tables"
+            },
+            {
+              "id": "2.5",
+              "title": "Page Replacement Algorithms (FIFO, LRU, Optimal)"
+            },
+            {
+              "id": "2.6",
+              "title": "Memory Fragmentation (Internal vs. External)"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "level": "Advanced",
+          "section": "File Systems, I/O, and Virtualization",
+          "description": "Deeper topics on data storage, device interaction, and modern OS concepts that distinguish senior candidates.",
+          "subtopics": [
+            {
+              "id": "3.1",
+              "title": "File System Internals (Inodes, Blocks, Superblock)"
+            },
+            {
+              "id": "3.2",
+              "title": "Journaling File Systems"
+            },
+            {
+              "id": "3.3",
+              "title": "I/O Management (Polling, Interrupts, DMA)"
+            },
+            {
+              "id": "3.4",
+              "title": "RAID Levels Explained (0, 1, 5, 10)"
+            },
+            {
+              "id": "3.5",
+              "title": "Virtualization and Hypervisors (Type 1 vs. Type 2)"
+            },
+            {
+              "id": "3.6",
+              "title": "OS Security: Access Control and Sandboxing"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Networking",
+      "sections": [
+        {
+          "id": "1",
+          "level": "Beginner",
+          "section": "Network Models & Data Link Layer",
+          "description": "Understanding the foundational models and how devices communicate on a local network.",
+          "subtopics": [
+            {
+              "id": "1.1",
+              "title": "OSI vs. TCP/IP Model"
+            },
+            {
+              "id": "1.2",
+              "title": "Data Encapsulation"
+            },
+            {
+              "id": "1.3",
+              "title": "IP Addresses vs. MAC Addresses"
+            },
+            {
+              "id": "1.4",
+              "title": "ARP (Address Resolution Protocol)"
+            },
+            {
+              "id": "1.5",
+              "title": "Switches vs. Routers vs. Hubs"
+            },
+            {
+              "id": "1.6",
+              "title": "Subnetting and CIDR Notation"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "level": "Intermediate",
+          "section": "Transport & Application Layers",
+          "description": "The core of most SWE interviews: how data integrity is ensured and how common internet services work.",
+          "subtopics": [
+            {
+              "id": "2.1",
+              "title": "TCP vs. UDP"
+            },
+            {
+              "id": "2.2",
+              "title": "TCP 3-Way Handshake & Connection Termination"
+            },
+            {
+              "id": "2.3",
+              "title": "TCP Flow Control & Congestion Control"
+            },
+            {
+              "id": "2.4",
+              "title": "DNS Resolution Process (Recursive vs. Iterative)"
+            },
+            {
+              "id": "2.5",
+              "title": "HTTP/HTTPS (Request/Response, Methods, Status Codes)"
+            },
+            {
+              "id": "2.6",
+              "title": "What happens when you type google.com in your browser?"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "level": "Advanced",
+          "section": "Security, Performance & Modern Networking",
+          "description": "Topics for senior candidates, focusing on security, network architecture, and modern protocols.",
+          "subtopics": [
+            {
+              "id": "3.1",
+              "title": "TLS/SSL Handshake"
+            },
+            {
+              "id": "3.2",
+              "title": "HTTP/1.1 vs HTTP/2 vs HTTP/3 (QUIC)"
+            },
+            {
+              "id": "3.3",
+              "title": "Load Balancers (L4 vs. L7) & Reverse Proxies"
+            },
+            {
+              "id": "3.4",
+              "title": "NAT (Network Address Translation)"
+            },
+            {
+              "id": "3.5",
+              "title": "Firewalls and VPNs"
+            },
+            {
+              "id": "3.6",
+              "title": "WebSockets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "SQL",
+      "sections": [
+        {
+          "id": "1",
+          "level": "Beginner",
+          "section": "Data Manipulation & Basic Retrieval",
+          "description": "The essential DML commands for modifying data and the foundational syntax for fetching, filtering, and ordering data from a single table.",
+          "subtopics": [
+            {
+              "id": "1.1",
+              "title": "`INSERT INTO`: Adding new rows"
+            },
+            {
+              "id": "1.2",
+              "title": "`UPDATE ... WHERE`: Modifying existing rows"
+            },
+            {
+              "id": "1.3",
+              "title": "`DELETE FROM ... WHERE`: Removing specific rows"
+            },
+            {
+              "id": "1.4",
+              "title": "`SELECT, FROM, WHERE`: Basic data retrieval and filtering"
+            },
+            {
+              "id": "1.5",
+              "title": "Sorting with `ORDER BY` and Paginating with `LIMIT`/`OFFSET`"
+            },
+            {
+              "id": "1.6",
+              "title": "`TRUNCATE` vs. `DELETE`: Key differences"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "level": "Intermediate",
+          "section": "Advanced DML & Multi-Table Querying",
+          "description": "Combining data from multiple tables, performing calculations, and utilizing powerful PostgreSQL-specific DML features.",
+          "subtopics": [
+            {
+              "id": "2.1",
+              "title": "JOINs: `INNER`, `LEFT`/`RIGHT` `OUTER`"
+            },
+            {
+              "id": "2.2",
+              "title": "The `RETURNING` clause with DML statements"
+            },
+            {
+              "id": "2.3",
+              "title": "`INSERT ... ON CONFLICT` (Upsert)"
+            },
+            {
+              "id": "2.4",
+              "title": "Aggregate Functions (`COUNT`, `SUM`, `AVG`) with `GROUP BY`"
+            },
+            {
+              "id": "2.5",
+              "title": "Filtering Groups with `HAVING`"
+            },
+            {
+              "id": "2.6",
+              "title": "Subqueries (Scalar, Multi-row, Correlated)"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "level": "Advanced",
+          "section": "Analytical & Complex Queries",
+          "description": "Advanced techniques for complex analysis, data transformation, and querying non-relational data structures within PostgreSQL.",
+          "subtopics": [
+            {
+              "id": "3.1",
+              "title": "Window Functions (`OVER`, `PARTITION BY`, `ROW_NUMBER`, `RANK`)"
+            },
+            {
+              "id": "3.2",
+              "title": "Common Table Expressions (CTEs) (`WITH` clause)"
+            },
+            {
+              "id": "3.3",
+              "title": "Recursive CTEs for Hierarchical Data"
+            },
+            {
+              "id": "3.4",
+              "title": "Conditional Logic with `CASE` Statements"
+            },
+            {
+              "id": "3.5",
+              "title": "Querying JSON/JSONB Data (`->`, `->>`, `@>`) "
+            },
+            {
+              "id": "3.6",
+              "title": "Lateral Joins"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "AWS Essentials",
+      "sections": [
+        {
+          "id": "1",
+          "level": "Beginner",
+          "section": "Core Services & Foundational Concepts",
+          "description": "The absolute must-know services that form the building blocks of any AWS architecture, focusing on compute, storage, and networking.",
+          "subtopics": [
+            {
+              "id": "1.1",
+              "title": "IAM: Users, Groups, Roles, and Policies"
+            },
+            {
+              "id": "1.2",
+              "title": "EC2: Instances, Security Groups, and EBS"
+            },
+            {
+              "id": "1.3",
+              "title": "S3: Buckets, Objects, and Storage Classes"
+            },
+            {
+              "id": "1.4",
+              "title": "VPC: Subnets (Public vs. Private), Route Tables, NAT vs. Internet Gateway"
+            },
+            {
+              "id": "1.5",
+              "title": "Global Infrastructure: Regions vs. Availability Zones"
+            },
+            {
+              "id": "1.6",
+              "title": "Shared Responsibility Model"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "level": "Intermediate",
+          "section": "Scalability, Automation & Managed Databases",
+          "description": "How to build scalable and resilient applications using managed services and automation, a common focus in system design interviews.",
+          "subtopics": [
+            {
+              "id": "2.1",
+              "title": "Elastic Load Balancing (ALB vs. NLB)"
+            },
+            {
+              "id": "2.2",
+              "title": "Auto Scaling Groups (ASG)"
+            },
+            {
+              "id": "2.3",
+              "title": "RDS: Managed Relational Databases & Read Replicas"
+            },
+            {
+              "id": "2.4",
+              "title": "DynamoDB: Core Concepts (Partitions, Keys, Consistency)"
+            },
+            {
+              "id": "2.5",
+              "title": "Lambda: Serverless compute and event-driven architecture"
+            },
+            {
+              "id": "2.6",
+              "title": "Infrastructure as Code (IaC) with CloudFormation"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "level": "Advanced",
+          "section": "Decoupling, Caching & Observability",
+          "description": "Services and patterns for building robust, high-performance, and maintainable distributed systems on AWS.",
+          "subtopics": [
+            {
+              "id": "3.1",
+              "title": "SQS: Message Queues for Decoupling"
+            },
+            {
+              "id": "3.2",
+              "title": "SNS: Pub/Sub Messaging"
+            },
+            {
+              "id": "3.3",
+              "title": "CloudWatch: Metrics, Alarms, and Logs"
+            },
+            {
+              "id": "3.4",
+              "title": "Route 53: DNS and Routing Policies"
+            },
+            {
+              "id": "3.5",
+              "title": "CloudFront: Content Delivery Network (CDN) and Caching"
+            },
+            {
+              "id": "3.6",
+              "title": "ElastiCache: In-Memory Caching (Redis vs. Memcached)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "TypeScript",
+      "sections": [
+        {
+          "id": "1",
+          "level": "Beginner",
+          "section": "TypeScript Fundamentals & Core Concepts",
+          "description": "Foundational knowledge essential for any TypeScript interview, focusing on the 'why' behind TypeScript and its core syntax.",
+          "subtopics": [
+            {
+              "id": "1.1",
+              "title": "TypeScript vs. JavaScript: The 'Why'"
+            },
+            {
+              "id": "1.2",
+              "title": "The TypeScript Compiler (TSC) and `tsconfig.json`"
+            },
+            {
+              "id": "1.3",
+              "title": "Basic Types: `string`, `number`, `boolean`, `null`, `undefined`, `any`, `unknown`, `void`, `never`"
+            },
+            {
+              "id": "1.4",
+              "title": "Type Inference vs. Type Annotation"
+            },
+            {
+              "id": "1.5",
+              "title": "Interfaces vs. Type Aliases"
+            },
+            {
+              "id": "1.6",
+              "title": "Typing Arrays and Objects"
+            },
+            {
+              "id": "1.7",
+              "title": "Function Typing: Parameters, Return Types, and Function Overloading"
+            },
+            {
+              "id": "1.8",
+              "title": "Union and Intersection Types"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "level": "Intermediate",
+          "section": "Advanced Types and Generics",
+          "description": "Demonstrating practical, real-world TypeScript proficiency by creating flexible and reusable typed components.",
+          "subtopics": [
+            {
+              "id": "2.1",
+              "title": "Generics: Functions, Interfaces, and Classes"
+            },
+            {
+              "id": "2.2",
+              "title": "Generic Constraints (`extends` keyword)"
+            },
+            {
+              "id": "2.3",
+              "title": "Key Utility Types: `Partial`, `Readonly`, `Pick`, `Omit`, `Record`"
+            },
+            {
+              "id": "2.4",
+              "title": "Enums: Numeric vs. String Enums and their transpiled output"
+            },
+            {
+              "id": "2.5",
+              "title": "Type Guards and Narrowing (`typeof`, `instanceof`, `in`, custom type guards)"
+            },
+            {
+              "id": "2.6",
+              "title": "Indexed Access Types and `keyof`"
+            },
+            {
+              "id": "2.7",
+              "title": "Class Typing: `implements`, `public`/`private`/`protected`, `readonly` properties"
+            },
+            {
+              "id": "2.8",
+              "title": "Handling `null` and `undefined` with `strictNullChecks`"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "level": "Advanced",
+          "section": "Type System Mastery & Architectural Patterns",
+          "description": "Expert-level topics that showcase deep understanding of the type system, its edge cases, and modern development patterns.",
+          "subtopics": [
+            {
+              "id": "3.1",
+              "title": "Conditional Types and the `infer` keyword"
+            },
+            {
+              "id": "3.2",
+              "title": "Mapped Types and Template Literal Types"
+            },
+            {
+              "id": "3.3",
+              "title": "Advanced Utility Types: `Exclude`, `Extract`, `NonNullable`, `ReturnType`, `Parameters`"
+            },
+            {
+              "id": "3.4",
+              "title": "Decorators: Syntax, Use Cases (e.g., NestJS, Angular), and `experimentalDecorators`"
+            },
+            {
+              "id": "3.5",
+              "title": "Module Resolution (`paths` aliasing, `rootDirs`)"
+            },
+            {
+              "id": "3.6",
+              "title": "Declaration Files (`.d.ts`) and Declaration Merging"
+            },
+            {
+              "id": "3.7",
+              "title": "Branding and Nominal Typing"
+            },
+            {
+              "id": "3.8",
+              "title": "Compiler Performance and Project References"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "Git",
+      "sections": [
+        {
+          "id": "1",
+          "level": "Beginner",
+          "section": "Core Concepts & Everyday Workflow",
+          "description": "Foundational commands and concepts for versioning projects. These are the absolute essentials for any technical interview.",
+          "subtopics": [
+            {
+              "id": "1.1",
+              "title": "The Three States (Modified, Staged, Committed)"
+            },
+            {
+              "id": "1.2",
+              "title": "git init, git clone"
+            },
+            {
+              "id": "1.3",
+              "title": "git add, git commit, git status"
+            },
+            {
+              "id": "1.4",
+              "title": "git log"
+            },
+            {
+              "id": "1.5",
+              "title": "git remote add/remove"
+            },
+            {
+              "id": "1.6",
+              "title": "git push, git pull"
+            },
+            {
+              "id": "1.7",
+              "title": "Ignoring files with .gitignore"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "level": "Intermediate",
+          "section": "Branching, Merging & History Manipulation",
+          "description": "Mastering collaborative workflows and managing project history. Questions here test your ability to work effectively in a team.",
+          "subtopics": [
+            {
+              "id": "2.1",
+              "title": "git branch (create, list, delete)"
+            },
+            {
+              "id": "2.2",
+              "title": "git checkout / git switch"
+            },
+            {
+              "id": "2.3",
+              "title": "git merge and Resolving Merge Conflicts"
+            },
+            {
+              "id": "2.4",
+              "title": "Fetch vs. Pull"
+            },
+            {
+              "id": "2.5",
+              "title": "git rebase (and when not to use it)"
+            },
+            {
+              "id": "2.6",
+              "title": "git reset (soft, mixed, hard)"
+            },
+            {
+              "id": "2.7",
+              "title": "git revert"
+            },
+            {
+              "id": "2.8",
+              "title": "git stash"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "level": "Advanced",
+          "section": "Advanced Techniques & Internals",
+          "description": "Deep dive into Git's internals and powerful commands for complex scenarios. These topics separate senior candidates from the rest.",
+          "subtopics": [
+            {
+              "id": "3.1",
+              "title": "Interactive Rebase (squash, fixup, reword)"
+            },
+            {
+              "id": "3.2",
+              "title": "git cherry-pick"
+            },
+            {
+              "id": "3.3",
+              "title": "git reflog: Your Safety Net"
+            },
+            {
+              "id": "3.4",
+              "title": "Git Objects (blobs, trees, commits, tags)"
+            },
+            {
+              "id": "3.5",
+              "title": "git bisect"
+            },
+            {
+              "id": "3.6",
+              "title": "Git Hooks"
+            },
+            {
+              "id": "3.7",
+              "title": "git blame"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "topic": "OOPS",
+      "sections": [
+        {
+          "id": "1",
+          "level": "Beginner",
+          "section": "Core OOP & SOLID Principles",
+          "description": "Master the foundational pillars of OOP and the principles that guide robust and maintainable design.",
+          "subtopics": [
+            {
+              "id": "1.1",
+              "title": "The Four Pillars of OOP"
+            },
+            {
+              "id": "1.2",
+              "title": "SOLID Principles"
+            },
+            {
+              "id": "1.3",
+              "title": "Composition over Inheritance"
+            },
+            {
+              "id": "1.4",
+              "title": "Introduction to Design Patterns (Categories)"
+            }
+          ]
+        },
+        {
+          "id": "2",
+          "level": "Intermediate",
+          "section": "Fundamental Creational Patterns",
+          "description": "Learn how to abstract and control object instantiation processes to create more flexible and decoupled systems.",
+          "subtopics": [
+            {
+              "id": "2.1",
+              "title": "Singleton Pattern"
+            },
+            {
+              "id": "2.2",
+              "title": "Factory Method Pattern"
+            },
+            {
+              "id": "2.3",
+              "title": "Abstract Factory Pattern"
+            },
+            {
+              "id": "2.4",
+              "title": "Builder Pattern"
+            }
+          ]
+        },
+        {
+          "id": "3",
+          "level": "Intermediate",
+          "section": "Fundamental Structural Patterns",
+          "description": "Understand how to assemble objects and classes into larger structures while keeping them flexible and efficient.",
+          "subtopics": [
+            {
+              "id": "3.1",
+              "title": "Adapter Pattern"
+            },
+            {
+              "id": "3.2",
+              "title": "Decorator Pattern"
+            },
+            {
+              "id": "3.3",
+              "title": "Facade Pattern"
+            },
+            {
+              "id": "3.4",
+              "title": "Proxy Pattern"
+            }
+          ]
+        },
+        {
+          "id": "4",
+          "level": "Intermediate",
+          "section": "Fundamental Behavioral Patterns",
+          "description": "Master patterns that manage algorithms and the assignment of responsibilities between objects.",
+          "subtopics": [
+            {
+              "id": "4.1",
+              "title": "Strategy Pattern"
+            },
+            {
+              "id": "4.2",
+              "title": "Observer Pattern"
+            },
+            {
+              "id": "4.3",
+              "title": "Command Pattern"
+            },
+            {
+              "id": "4.4",
+              "title": "Template Method Pattern"
+            }
+          ]
+        },
+        {
+          "id": "5",
+          "level": "Advanced",
+          "section": "Advanced Structural Patterns",
+          "description": "Explore complex structural patterns for memory optimization and recursive object composition.",
+          "subtopics": [
+            {
+              "id": "5.1",
+              "title": "Composite Pattern"
+            },
+            {
+              "id": "5.2",
+              "title": "Flyweight Pattern"
+            },
+            {
+              "id": "5.3",
+              "title": "Bridge Pattern"
+            }
+          ]
+        },
+        {
+          "id": "6",
+          "level": "Advanced",
+          "section": "Advanced Behavioral Patterns",
+          "description": "Tackle complex communication flows, state transitions, and decoupling of senders and receivers.",
+          "subtopics": [
+            {
+              "id": "6.1",
+              "title": "State Pattern"
+            },
+            {
+              "id": "6.2",
+              "title": "Chain of Responsibility Pattern"
+            },
+            {
+              "id": "6.3",
+              "title": "Mediator Pattern"
+            },
+            {
+              "id": "6.4",
+              "title": "Visitor Pattern"
+            }
+          ]
+        },
+        {
+          "id": "7",
+          "level": "Advanced",
+          "section": "System Design & Anti-Patterns",
+          "description": "Apply design patterns in a broader system context and learn to identify and refactor common anti-patterns.",
+          "subtopics": [
+            {
+              "id": "7.1",
+              "title": "Combining Patterns"
+            },
+            {
+              "id": "7.2",
+              "title": "Common Anti-Patterns"
+            },
+            {
+              "id": "7.3",
+              "title": "Refactoring Towards Patterns"
+            },
+            {
+              "id": "7.4",
+              "title": "GRASP Principles"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
