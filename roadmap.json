@@ -1102,6 +1102,7 @@
               "id": "3.2",
               "title": "Journaling File Systems"
             },
+
             {
               "id": "3.3",
               "title": "I/O Management (Polling, Interrupts, DMA)"
@@ -1117,6 +1118,14 @@
             {
               "id": "3.6",
               "title": "OS Security: Access Control and Sandboxing"
+            },
+            {
+              "id": "3.7",
+              "title": "HDD , How it works"
+            },
+            {
+              "id": "3.8",
+              "title": "SSD , How it works"
             }
           ]
         }
