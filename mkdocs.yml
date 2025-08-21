@@ -1,8 +1,23 @@
 site_name: My Study Guide
+
 theme:
   name: material
   features:
-    - navigation.instant # Optional, but recommended for better experience
+    - navigation.instant
+  palette:
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+   
 
 markdown_extensions:
   - admonition
@@ -17,11 +32,11 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences:
-      # The correct key is 'custom_fences'
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
+
 plugins:
   - search
 
