@@ -356,6 +356,8 @@ nav:
       - 15.7 Synchronous IO: System_Design/15_Performance_Antipatterns/15.7_Synchronous_IO.md
       - 15.8 Retry Storm: System_Design/15_Performance_Antipatterns/15.8_Retry_Storm.md
       - 15.9 Extraneous Fetching: System_Design/15_Performance_Antipatterns/15.9_Extraneous_Fetching.md
+    - 16 Miscellaneous Topics:
+      - 16.1 Raft Consensus Algorithm: System_Design/16_Miscellaneous_topics/16.1_Raft_Consensus_Algorithm.md
     - 2 Consistency & Availability Patterns:
       - 2.1 Consistency Patterns: System_Design/2_Consistency_&_Availability_Patterns/2.1_Consistency_Patterns.md
       - 2.2 Availability Patterns: System_Design/2_Consistency_&_Availability_Patterns/2.2_Availability_Patterns.md

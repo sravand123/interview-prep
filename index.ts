@@ -12,7 +12,7 @@ if (!GEMINI_API_KEY) {
     'GEMINI_API_KEY is not set in environment variables. Please add it to your .env file.'
   );
 }
-const modelName = 'gemini-2.5-flash-lite';
+const modelName = 'gemini-2.5-flash';
 const roadmapFile = './roadmap.json';
 const outputDir = './docs';
 

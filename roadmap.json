@@ -1018,6 +1018,19 @@
               "hint": "Failing to cache frequently accessed but rarely changing data leads to repeatedly fetching the same information, which reduces performance and scalability. [2]"
             }
           ]
+        },
+        {
+          "id": "16",
+          "level": "Expert",
+          "section": "Miscellaneous topics",
+          "description": "Other important topics that don't fit neatly into the above categories but are still relevant for system design interviews.",
+          "subtopics": [
+            {
+              "id": "16.1",
+              "title": "Raft Consensus Algorithm",
+              "hint": "Explain RAFT consensus algorithm in detail and explain each of its components like leader election, log replication, safety, and membership changes. Also explain failure scenarios and how RAFT handles them."
+            }
+          ]
         }
       ]
     },
